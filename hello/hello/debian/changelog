@@ -1,9 +1,3 @@
-hello (2.2-2) trusty; urgency=low
-
-  * 2 release (Closes: #45678)  
-
- -- Craig Yang <nikeasyanzi@gmail.com>  Tue, 13 Jun 2023 13:43:35 +0800
-
 hello (2.2-1) trusty; urgency=low
 
   * Initial release (Closes: #123456)  
