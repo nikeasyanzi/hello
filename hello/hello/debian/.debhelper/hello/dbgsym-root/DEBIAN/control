@@ -1,0 +1,13 @@
+Package: hello-dbgsym
+Package-Type: ddeb
+Source: hello
+Version: 2.2-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Craig Yang <nikeasyanzi@gmail.com>
+Installed-Size: 34
+Depends: hello (= 2.2-1)
+Section: debug
+Priority: optional
+Description: debug symbols for hello
+Build-Ids: 9ed0124434e6d89ff68afea356acb4bb71fa3e5e

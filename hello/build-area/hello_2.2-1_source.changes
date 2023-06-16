@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Tue, 13 Jun 2023 13:43:35 +0800
+Source: hello
+Architecture: source
+Version: 2.2-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Craig Yang <nikeasyanzi@gmail.com>
+Changed-By: Craig Yang <nikeasyanzi@gmail.com>
+Changes:
+ hello (2.2-1) unstable; urgency=medium
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1:
+ 7f47b111050907fa5339c8f8948c02763f91bc33 1533 hello_2.2-1.dsc
+ 9238accd00fd1bd3e3ec04d0396f4ab7d7bed301 408308 hello_2.2.orig.tar.gz
+ 80ae8889e5eef72231f15d2345e37538ef1ffcaa 272387 hello_2.2-1.diff.gz
+ 13a1e5b44bc59e6e44f3c8c1a359f74f9b135e7f 14977 hello_2.2-1_source.buildinfo
+Checksums-Sha256:
+ 2c9d94a01e7e16bc35665b48851a6cbaefb54c9fc1564ce8845b073864f5cf6b 1533 hello_2.2-1.dsc
+ 69a2861b1fcec657c1a0ec8a87bd38fb8f0072a1dec085fdd5653daac9be5751 408308 hello_2.2.orig.tar.gz
+ 1ef4f11f2789bead582e34c4f25ab97963bde10877e13ad9957282067ef71bec 272387 hello_2.2-1.diff.gz
+ 173f50dc005f368df8a084e61d2bd2688be5e4102f9970d5f5227385d140c7de 14977 hello_2.2-1_source.buildinfo
+Files:
+ 09ef13357262fb6a20c0225c36d01821 1533 unknown optional hello_2.2-1.dsc
+ d2298e4b0c0a5b6e0746e929a7d0a401 408308 unknown optional hello_2.2.orig.tar.gz
+ b3ca3fe1055cc0657162b32ba995d53b 272387 unknown optional hello_2.2-1.diff.gz
+ 1a43641c650f74a14f62aef8630a3bc3 14977 unknown optional hello_2.2-1_source.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQHKBAEBCgA0FiEEdXkPneQ5neaLAmy2ID+ebastqDgFAmSIFuwWHG5pa2Vhc3lh
+bnppQGdtYWlsLmNvbQAKCRAgP55tqy2oOEoVC/9UdumtsL8DdDwerDKlP/qZkovl
+AasRGEmrbqJiG8j6TWkbS1M0otoqnb37bxu0Q/56QR3Z80hU6rQZqVbZX/o/9JED
+5Vm8hqLz4uZFQyu2Q3F/Rp+mygwm6UnRhAu7Olcrth7qDh1+qcuT9j/2E19pEjyt
+oyEKminZu+T/0DYCYKoQ9FSVMZybN5dGWsQ047ZD5NMHMsoRGz7xYcZcmuEEJ3Bq
+fY50I8I2q7eH+GCqz2o4hrkIs9tyo2GvNPvUqDFmrREONtKpVKPVd4xYUMXfgwQs
+6sNbxsP0ZzDl/+fj4wWOxxmLBlyJlz9PHvVO5VLM7QbHYUXtOx/m6dvmFcXUrUtn
+xh1GqDUHmA9x4gcZZMQwVXQGZGg5Zo+ggWEsjKcp0T4kp4dl+tJfH5vaDa/3DjSy
+G30n4lcUQCnqdaqWqHPb+WfeOBe8DVv84Kqz5efrdQHPbuPHWKbGj6VYN1X4IWAP
+Fm/9p+OVyjn6QLNiZM8ywU+fUm7KULoMIHz7Xcg=
+=J+Vo
+-----END PGP SIGNATURE-----

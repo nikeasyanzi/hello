@@ -1,0 +1,9 @@
+gnulib/lib/close-stream.o
+gnulib/lib/closeout.o
+gnulib/lib/exitfail.o
+gnulib/lib/libgnu.a
+gnulib/lib/quotearg.o
+gnulib/lib/xalloc-die.o
+gnulib/lib/xmalloc.o
+src/hello
+src/hello.o

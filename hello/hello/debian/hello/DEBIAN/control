@@ -1,0 +1,12 @@
+Package: hello
+Version: 2.2-1
+Architecture: amd64
+Maintainer: Craig Yang <nikeasyanzi@gmail.com>
+Installed-Size: 275
+Depends: libc6 (>= 2.14)
+Section: unknown
+Priority: optional
+Homepage: <insert the upstream URL, if relevant>
+Description: Hello testing package
+ This is a test packaging built against hello package.
+ just for fun

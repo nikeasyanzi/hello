@@ -1,0 +1,16 @@
+Source: hello
+Section: unknown
+Priority: optional
+Maintainer: Craig Yang <nikeasyanzi@gmail.com>
+Build-Depends: debhelper-compat (= 12), autotools-dev
+Standards-Version: 4.4.1
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Browser: https://salsa.debian.org/debian/hello
+#Vcs-Git: https://salsa.debian.org/debian/hello.git
+
+Package: hello
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Hello testing package 
+ This is a test packaging built against hello package.
+ just for fun

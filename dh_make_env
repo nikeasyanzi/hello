@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+DEBEMAIL="nikeasyanzi@gmail.com"
+DEBFULLNAME="Craig Yang"
+export DEBEMAIL DEBFULLNAME
+DEBSIGN_KEYID="203F9E6DAB2DA838"
+export DEBSIGN_KEYID

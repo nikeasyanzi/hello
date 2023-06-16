@@ -1,0 +1,236 @@
+ dpkg-buildpackage -us -uc -ui -nc
+dpkg-buildpackage: info: source package hello
+dpkg-buildpackage: info: source version 2.2-1
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Craig Yang <nikeasyanzi@gmail.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules build
+dh build
+   dh_update_autotools_config
+   dh_autoreconf
+Copying file gnulib/m4/codeset.m4
+Copying file gnulib/m4/glibc2.m4
+Copying file gnulib/m4/glibc21.m4
+Copying file gnulib/m4/intdiv0.m4
+Copying file gnulib/m4/intl.m4
+Copying file gnulib/m4/intldir.m4
+Copying file gnulib/m4/intmax.m4
+Copying file gnulib/m4/inttypes-pri.m4
+Copying file gnulib/m4/inttypes_h.m4
+Copying file gnulib/m4/lcmessage.m4
+Copying file gnulib/m4/longdouble.m4
+Copying file gnulib/m4/longlong.m4
+Copying file gnulib/m4/printf-posix.m4
+Copying file gnulib/m4/size_max.m4
+Copying file gnulib/m4/stdint_h.m4
+Copying file gnulib/m4/uintmax_t.m4
+Copying file gnulib/m4/ulonglong.m4
+Copying file gnulib/m4/visibility.m4
+Copying file gnulib/m4/wchar_t.m4
+Copying file gnulib/m4/wint_t.m4
+Copying file gnulib/m4/xsize.m4
+Copying file po/Makevars.template
+configure.ac:47: warning: The 'AM_PROG_MKDIR_P' macro is deprecated, and its use is discouraged.
+configure.ac:47: You should use the Autoconf-provided 'AC_PROG_MKDIR_P' macro instead,
+configure.ac:47: and use '$(MKDIR_P)' instead of '$(mkdir_p)'in your Makefile.am files.
+configure.ac:26: installing 'build-aux/compile'
+parallel-tests: installing 'build-aux/test-driver'
+   dh_auto_configure
+	./configure --build=x86_64-linux-gnu --prefix=/usr --includedir=\${prefix}/include --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --sysconfdir=/etc --localstatedir=/var --disable-silent-rules --libdir=\${prefix}/lib/x86_64-linux-gnu --runstatedir=/run --disable-maintainer-mode --disable-dependency-tracking
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... none
+checking for ranlib... ranlib
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking whether strerror_r is declared... yes
+checking for strerror_r... yes
+checking whether strerror_r returns char *... yes
+checking for stdio_ext.h... yes
+checking for wchar.h... yes
+checking for wctype.h... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking for getopt_long_only... yes
+checking whether optreset is declared... no
+checking for working GNU getopt function... yes
+checking whether getenv is declared... yes
+checking for inline... inline
+checking for iswprint... yes
+checking for mbsinit... yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for error_at_line... yes
+checking for __fpending... yes
+checking whether __fpending is declared... yes
+checking whether the compiler generally respects inline... yes
+checking for mbstate_t... yes
+checking whether mbrtowc and mbstate_t are properly declared... yes
+checking for unistd.h... (cached) yes
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by GCC... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating contrib/Makefile
+config.status: creating doc/Makefile
+config.status: creating gnulib/lib/Makefile
+config.status: creating man/Makefile
+config.status: creating po/Makefile.in
+config.status: creating src/Makefile
+config.status: creating tests/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+   dh_auto_build
+	make -j8
+make[1]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2'
+make  all-recursive
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2'
+Making all in contrib
+make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/contrib'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/contrib'
+Making all in gnulib/lib
+make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/gnulib/lib'
+make  all-am
+make[4]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/gnulib/lib'
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../../intl -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2=. -fstack-protector-strong -Wformat -Werror=format-security -c -o xalloc-die.o xalloc-die.c
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../../intl -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2=. -fstack-protector-strong -Wformat -Werror=format-security -c -o close-stream.o close-stream.c
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../../intl -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2=. -fstack-protector-strong -Wformat -Werror=format-security -c -o closeout.o closeout.c
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../../intl -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2=. -fstack-protector-strong -Wformat -Werror=format-security -c -o exitfail.o exitfail.c
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../../intl -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2=. -fstack-protector-strong -Wformat -Werror=format-security -c -o quotearg.o quotearg.c
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../../intl -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2=. -fstack-protector-strong -Wformat -Werror=format-security -c -o xmalloc.o xmalloc.c
+rm -f libgnu.a
+ar cru libgnu.a xalloc-die.o close-stream.o closeout.o exitfail.o quotearg.o xmalloc.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+ranlib libgnu.a
+make[4]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/gnulib/lib'
+make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/gnulib/lib'
+Making all in po
+make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/po'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/po'
+Making all in src
+make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/src'
+gcc -DLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H -I. -I..  -I../gnulib/lib -I../gnulib/lib -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2=. -fstack-protector-strong -Wformat -Werror=format-security -c -o hello.o hello.c
+gcc  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2=. -fstack-protector-strong -Wformat -Werror=format-security  -Wl,-Bsymbolic-functions -Wl,-z,relro -o hello hello.o ../gnulib/lib/libgnu.a 
+make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/src'
+Making all in doc
+make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/doc'
+make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/doc'
+Making all in man
+make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/man'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/man'
+Making all in tests
+make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/tests'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/tests'
+make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2'
+make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2'
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2'
+make[1]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2'
+   dh_auto_test
+	make -j8 check VERBOSE=1
+make[1]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2'
+Making check in contrib
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/contrib'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/contrib'
+Making check in gnulib/lib
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/gnulib/lib'
+make  check-am
+make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/gnulib/lib'
+make[3]: Nothing to be done for 'check-am'.
+make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/gnulib/lib'
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/gnulib/lib'
+Making check in po
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/po'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/po'
+Making check in src
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/src'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/src'
+Making check in doc
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/doc'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/doc'
+Making check in man
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/man'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/man'
+Making check in tests
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/tests'
+make  check-TESTS
+make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/tests'
+make[4]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/tests'
+/bin/bash: /bin/bash: cannot execute binary file
+/bin/bash: /bin/bash: cannot execute binary file
+/bin/bash: /bin/bash: cannot execute binary file
+make[4]: *** [Makefile:676: greeting-1.log] Error 126
+make[4]: *** Waiting for unfinished jobs....
+/bin/bash: /bin/bash: cannot execute binary file
+make[4]: *** [Makefile:683: greeting-2.log] Error 126
+make[4]: *** [Makefile:690: hello-1.log] Error 126
+make[4]: *** [Makefile:697: traditional-1.log] Error 126
+make[4]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/tests'
+make[3]: *** [Makefile:658: check-TESTS] Error 2
+make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/tests'
+make[2]: *** [Makefile:752: check-am] Error 2
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2/tests'
+make[1]: *** [Makefile:450: check-recursive] Error 1
+make[1]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/build-area/hello-2.2'
+dh_auto_test: error: make -j8 check VERBOSE=1 returned exit code 2
+make: *** [debian/rules:18: build] Error 25
+dpkg-buildpackage: error: debian/rules build subprocess returned exit status 2

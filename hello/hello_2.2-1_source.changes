@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Tue, 13 Jun 2023 13:43:35 +0800
+Source: hello
+Architecture: source
+Version: 2.2-1
+Distribution: unstable
+Urgency: low
+Maintainer: Craig Yang <nikeasyanzi@gmail.com>
+Changed-By: Craig Yang <nikeasyanzi@gmail.com>
+Closes: 123456
+Changes:
+ hello (2.2-1) unstable; urgency=low
+ .
+   * Initial release (Closes: #123456)
+Checksums-Sha1:
+ 2c31a8c9adf1fe4d9ff32dd773926d0da12c2e4c 1524 hello_2.2-1.dsc
+ 9238accd00fd1bd3e3ec04d0396f4ab7d7bed301 408308 hello_2.2.orig.tar.gz
+ 6da16e70d491a039a60d078a7bc348edb4ec1715 49336 hello_2.2-1.debian.tar.xz
+ f52880840933403b372a91446348ba5744da7c3a 15002 hello_2.2-1_source.buildinfo
+Checksums-Sha256:
+ 23ed122f38122fdfe52a429dc87a9ec714ef72ea2a3a99546ccee442121a5683 1524 hello_2.2-1.dsc
+ 69a2861b1fcec657c1a0ec8a87bd38fb8f0072a1dec085fdd5653daac9be5751 408308 hello_2.2.orig.tar.gz
+ 3b5a5a2b849c4c389afbf4c9d0c07dc68d00ee2683e068662f05baef22f73340 49336 hello_2.2-1.debian.tar.xz
+ 98f8ac9400f42471afc7d465e8ab2b1351f7daa5931c1fd77deb11afcc39d16f 15002 hello_2.2-1_source.buildinfo
+Files:
+ 3a277a2681ac3cb0086b55cea09f3517 1524 unknown optional hello_2.2-1.dsc
+ d2298e4b0c0a5b6e0746e929a7d0a401 408308 unknown optional hello_2.2.orig.tar.gz
+ ce858149477f9ed7ad313f3aedc1a864 49336 unknown optional hello_2.2-1.debian.tar.xz
+ d00bfcf17e494ae08faebe61695ff6c8 15002 unknown optional hello_2.2-1_source.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEdXkPneQ5neaLAmy2ID+ebastqDgFAmSMD7MACgkQID+ebast
+qDjMXAwAs8s2uZh61Dca0GHBk3lF7DCX+3JfYZJky2UghetpzxhisjY3QY7TXFFh
+aADlGlvj3lnK7cMvHpU2hlwL1aDX02LU2xEWw0vw6/Ia8CQCNG3eKQkCuviR7cLH
+d0WMnP+wZIPCnYhpmWe8W00TpnwezJJ9iipECaIbn11u71m/w3H5vvmLURH0Utl/
+svqlNxIaVQSBgn4j/gep+cxGnkVOanzTJl/dM6fIDKDMbm3yF6FG52m1DGAmftFf
+b/WXzMq7rXEU5qKx/Tq0dFDEPjaFO3OkY/No8sNxRPAYXkHpH+miEK2viT9XJ/zm
+PX3XetDb2Lv8A/MLy3iUEwNdk9G6Ba6WXSZNn+qHowd1KmY4QV9ga565NBB5kF9y
+MCqKgiWPttywr+Jh5Q6wFHVITaIzrI99VpzeiUAKW5rMVq817lkJGK4ZqCn42+rh
+JhZVJBcHrA0u62MWQM+6YYJvEXtQuOw4kGowhQt2GSUpGQ8AsBUl6k2uC5dP35O9
+5a4avToG
+=zeVI
+-----END PGP SIGNATURE-----

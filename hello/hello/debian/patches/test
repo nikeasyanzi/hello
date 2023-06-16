@@ -1,0 +1,1214 @@
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ hello (2.2-1) unstable; urgency=low
+ .
+   * Initial release (Closes: #123456)
+Author: Craig Yang <nikeasyanzi@gmail.com>
+Bug-Debian: https://bugs.debian.org/123456
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: 2023-06-16
+
+--- hello-2.2.orig/doc/hello.info
++++ hello-2.2/doc/hello.info
+@@ -1,7 +1,7 @@
+-This is hello.info, produced by makeinfo version 4.8.90 from hello.texi.
++This is hello.info, produced by makeinfo version 6.7 from hello.texi.
+ 
+-   This manual is for GNU Hello (version 2.2, 23 November 2006), which
+-prints a friendly greeting (and serves as an example GNU package).
++This manual is for GNU Hello (version 2.2, 13 June 2023), which prints a
++friendly greeting (and serves as an example GNU package).
+ 
+    Copyright (C) 1992, 1993, 1996, 2002, 2005, 2006 Free Software
+ Foundation, Inc.
+@@ -15,9 +15,8 @@ Foundation, Inc.
+      "GNU Free Documentation License."
+ 
+      (a) The FSF's Back-Cover Text is: "You have freedom to copy and
+-     modify this GNU Manual, like GNU software.  Copies published by
+-     the Free Software Foundation raise funds for GNU development."
+-
++     modify this GNU Manual, like GNU software.  Copies published by the
++     Free Software Foundation raise funds for GNU development."
+ INFO-DIR-SECTION Basics
+ START-INFO-DIR-ENTRY
+ * Hello: (hello).               Hello, GNU world.
+@@ -29,13 +28,13 @@ File: hello.info,  Node: Top,  Next: Ove
+ GNU Hello
+ *********
+ 
+-This manual is for GNU Hello (version 2.2, 23 November 2006).
++This manual is for GNU Hello (version 2.2, 13 June 2023).
+ 
+ * Menu:
+ 
+ * Overview::		General purpose and information.
+-* Sample output::	Sample output from `hello'.
+-* Invoking hello::	How to run `hello'.
++* Sample output::	Sample output from 'hello'.
++* Invoking hello::	How to run 'hello'.
+ * Reporting bugs::	Sending bug reports and feature suggestions.
+ * Copying this manual:: Copying and sharing this documentation.
+ * Concept index::	Index of concepts.
+@@ -46,14 +45,14 @@ File: hello.info,  Node: Overview,  Next
+ 1 Overview
+ **********
+ 
+-The GNU `hello' program produces a familiar, friendly greeting.  It
+-allows nonprogrammers to use a classic computer science tool which
+-would otherwise be unavailable to them.  Because it is protected by the
+-GNU General Public License, users are free (in perpetuity) to share and
++The GNU 'hello' program produces a familiar, friendly greeting.  It
++allows nonprogrammers to use a classic computer science tool which would
++otherwise be unavailable to them.  Because it is protected by the GNU
++General Public License, users are free (in perpetuity) to share and
+ change it.
+ 
+    For the latest updates and other information, please visit the GNU
+-Hello home page at `http://www.gnu.org/software/hello/'.
++Hello home page at <http://www.gnu.org/software/hello/>.
+ 
+    Not to spoil the joke, but of course the practical purpose of GNU
+ Hello is to serve as a minimal example of a GNU package.  So, although
+@@ -69,7 +68,7 @@ should adhere to.
+ not embodied in the standards, using other GNU packages and features:
+ 
+    * It uses Automake (*note Introduction: (Automake)Top.) and hence
+-     also Autoconf (*note Introduction: (Autoconf)Top.)  for
++     also Autoconf (*note Introduction: (Autoconf)Top.) for
+      configuration.
+ 
+    * It uses Gnulib (*note Gnulib: (gnulib)Top.) to enhance portability
+@@ -79,12 +78,12 @@ not embodied in the standards, using oth
+      internationalization support.  Hello's greeting has been translated
+      into many languages.
+ 
+-   * Internally, Hello uses the GNU `getopt_long' function (*note
+-     Getopt Long Options: (libc)Getopt Long Options.) to parse options,
+-     thus supporting GNU-style long options such as `--help'.
++   * Internally, Hello uses the GNU 'getopt_long' function (*note
++     (libc)Getopt Long Options::) to parse options, thus supporting
++     GNU-style long options such as '--help'.
+ 
+-   * Man pages are generated with GNU `help2man' (*note Overview:
+-     (help2man)Top.) from the `--help' output.  This relieves the
++   * Man pages are generated with GNU 'help2man' (*note Overview:
++     (help2man)Top.) from the '--help' output.  This relieves the
+      maintainers of the burden of maintaining man documentation
+      separately, yet provides a reasonable overview for man devotees.
+ 
+@@ -92,12 +91,11 @@ not embodied in the standards, using oth
+      documentation format for this manual.  It supports output in Info,
+      HTML, PDF, DVI, plain text, XML, and other formats.
+ 
+-
+-   GNU Hello is implemented in C.  GNU Gettext contains "hello world"
++   GNU Hello is implemented in C. GNU Gettext contains "hello world"
+ examples in a variety of other programming languages; see the Gettext
+-home page at `http://www.gnu.org/software/gettext/'.
++home page at <http://www.gnu.org/software/gettext/>.
+ 
+-   GNU `hello' was written by Mike Haertel, David MacKenzie, Jan
++   GNU 'hello' was written by Mike Haertel, David MacKenzie, Jan
+ Brittenson, Charles Hannum, Roland McGrath, Noah Friedman, Karl
+ Eichwalder, Karl Berry, and The King.
+ 
+@@ -107,99 +105,90 @@ File: hello.info,  Node: Sample output,
+ 2 Sample output
+ ***************
+ 
+-Here are some realistic examples of running GNU `hello'.
++Here are some realistic examples of running GNU 'hello'.
+ 
+-   This is the output of the command `hello':
++   This is the output of the command 'hello':
+ 
+      Hello, world!
+ 
+-   This is the output of the command `hello --traditional':
++   This is the output of the command 'hello --traditional':
+ 
+      hello, world
+ 
+-   This is the output of the command `hello --greeting=hi':
++   This is the output of the command 'hello --greeting=hi':
+ 
+      hi
+ 
+ 
+ File: hello.info,  Node: Invoking hello,  Next: Reporting bugs,  Prev: Sample output,  Up: Top
+ 
+-3 Invoking `hello'
++3 Invoking 'hello'
+ ******************
+ 
+-The format for running the `hello' program is:
++The format for running the 'hello' program is:
+ 
+      hello OPTION ...
+ 
+-   `hello' supports the following options:
++   'hello' supports the following options:
+ 
+-`--greeting=TEXT'
+-`-g TEXT'
++'--greeting=TEXT'
++'-g TEXT'
+      Output TEXT.
+ 
+-`--help'
+-`-h'
++'--help'
++'-h'
+      Print an informative help message on standard output and exit
+      successfully.
+ 
+-     For the `--help' output of GNU programs, it's strongly encouraged
++     For the '--help' output of GNU programs, it's strongly encouraged
+      to include a brief (one or two sentences) description of what the
+      program does, as well as the synopsis of how to run the program.
+      Any environment variables which affect execution should also be
+      mentioned (Hello doesn't have any).
+ 
+-`--next-generation'
+-`-n'
+-     Output a modern greeting, possibly including box-drawing
+-     characters or other fancy stuff, using the Unicode UTF-8 locale.
+-
+-`--traditional'
+-`-t'
+-     Use the traditional greeting message `hello, world' rather than
+-     the more modern `Hello, world!'.
+-
+-`--version'
+-`-v'
+-     Print the version number and licensing information of `hello' on
++'--next-generation'
++'-n'
++     Output a modern greeting, possibly including box-drawing characters
++     or other fancy stuff, using the Unicode UTF-8 locale.
++
++'--traditional'
++'-t'
++     Use the traditional greeting message 'hello, world' rather than the
++     more modern 'Hello, world!'.
++
++'--version'
++'-v'
++     Print the version number and licensing information of 'hello' on
+      standard output and then exit successfully.
+ 
+-
+ 
+ File: hello.info,  Node: Reporting bugs,  Next: Copying this manual,  Prev: Invoking hello,  Up: Top
+ 
+ 4 Reporting bugs
+ ****************
+ 
+-To report bugs or suggest enhancements for GNU `hello', please send
++To report bugs or suggest enhancements for GNU 'hello', please send
+ electronic mail to <bug-hello@gnu.org>.
+ 
+    For bug reports, please include enough information for the
+ maintainers to reproduce the problem.  Generally speaking, that means:
+ 
+    * The version numbers of Hello (which you can find by running
+-     `hello --version') and any other program(s) or       manual(s)
+-     involved.
+-
++     'hello --version') and any other program(s) or manual(s) involved.
+    * Hardware and operating system names and versions.
+-
+    * The contents of any input files necessary to reproduce the bug.
+-
+    * The expected behavior and/or output.
+-
+    * A description of the problem and samples of any erroneous output.
+-
+-   * Options you gave to `configure' other than specifying
+-     installation directories.
+-
++   * Options you gave to 'configure' other than specifying installation
++     directories.
+    * Anything else that you think would be helpful.
+ 
+    When in doubt whether something is needed or not, include it.  It's
+ better to include too much than to leave out something important.
+ 
+-   Patches are welcome; if possible, please make them with `diff -c'
+-(*note Overview: (diff)Top.) and include `ChangeLog' entries (*note
+-Change Log: (emacs)Change Log.).  Please follow the existing coding
+-style.
++   Patches are welcome; if possible, please make them with 'diff -c'
++(*note Overview: (diff)Top.) and include 'ChangeLog' entries (*note
++(emacs)Change Log::).  Please follow the existing coding style.
+ 
+ 
+ File: hello.info,  Node: Copying this manual,  Next: Concept index,  Prev: Reporting bugs,  Up: Top
+@@ -245,21 +234,21 @@ A.1 GNU Free Documentation License
+      free program should come with manuals providing the same freedoms
+      that the software does.  But this License is not limited to
+      software manuals; it can be used for any textual work, regardless
+-     of subject matter or whether it is published as a printed book.
+-     We recommend this License principally for works whose purpose is
++     of subject matter or whether it is published as a printed book.  We
++     recommend this License principally for works whose purpose is
+      instruction or reference.
+ 
+   1. APPLICABILITY AND DEFINITIONS
+ 
+      This License applies to any manual or other work, in any medium,
+-     that contains a notice placed by the copyright holder saying it
+-     can be distributed under the terms of this License.  Such a notice
++     that contains a notice placed by the copyright holder saying it can
++     be distributed under the terms of this License.  Such a notice
+      grants a world-wide, royalty-free license, unlimited in duration,
+      to use that work under the conditions stated herein.  The
+      "Document", below, refers to any such manual or work.  Any member
+-     of the public is a licensee, and is addressed as "you".  You
+-     accept the license if you copy, modify or distribute the work in a
+-     way requiring permission under copyright law.
++     of the public is a licensee, and is addressed as "you".  You accept
++     the license if you copy, modify or distribute the work in a way
++     requiring permission under copyright law.
+ 
+      A "Modified Version" of the Document means any work containing the
+      Document or a portion of it, either copied verbatim, or with
+@@ -277,12 +266,12 @@ A.1 GNU Free Documentation License
+      regarding them.
+ 
+      The "Invariant Sections" are certain Secondary Sections whose
+-     titles are designated, as being those of Invariant Sections, in
+-     the notice that says that the Document is released under this
+-     License.  If a section does not fit the above definition of
+-     Secondary then it is not allowed to be designated as Invariant.
+-     The Document may contain zero Invariant Sections.  If the Document
+-     does not identify any Invariant Sections then there are none.
++     titles are designated, as being those of Invariant Sections, in the
++     notice that says that the Document is released under this License.
++     If a section does not fit the above definition of Secondary then it
++     is not allowed to be designated as Invariant.  The Document may
++     contain zero Invariant Sections.  If the Document does not identify
++     any Invariant Sections then there are none.
+ 
+      The "Cover Texts" are certain short passages of text that are
+      listed, as Front-Cover Texts or Back-Cover Texts, in the notice
+@@ -293,27 +282,27 @@ A.1 GNU Free Documentation License
+      A "Transparent" copy of the Document means a machine-readable copy,
+      represented in a format whose specification is available to the
+      general public, that is suitable for revising the document
+-     straightforwardly with generic text editors or (for images
+-     composed of pixels) generic paint programs or (for drawings) some
+-     widely available drawing editor, and that is suitable for input to
+-     text formatters or for automatic translation to a variety of
+-     formats suitable for input to text formatters.  A copy made in an
+-     otherwise Transparent file format whose markup, or absence of
+-     markup, has been arranged to thwart or discourage subsequent
+-     modification by readers is not Transparent.  An image format is
+-     not Transparent if used for any substantial amount of text.  A
+-     copy that is not "Transparent" is called "Opaque".
++     straightforwardly with generic text editors or (for images composed
++     of pixels) generic paint programs or (for drawings) some widely
++     available drawing editor, and that is suitable for input to text
++     formatters or for automatic translation to a variety of formats
++     suitable for input to text formatters.  A copy made in an otherwise
++     Transparent file format whose markup, or absence of markup, has
++     been arranged to thwart or discourage subsequent modification by
++     readers is not Transparent.  An image format is not Transparent if
++     used for any substantial amount of text.  A copy that is not
++     "Transparent" is called "Opaque".
+ 
+      Examples of suitable formats for Transparent copies include plain
+      ASCII without markup, Texinfo input format, LaTeX input format,
+-     SGML or XML using a publicly available DTD, and
+-     standard-conforming simple HTML, PostScript or PDF designed for
+-     human modification.  Examples of transparent image formats include
+-     PNG, XCF and JPG.  Opaque formats include proprietary formats that
+-     can be read and edited only by proprietary word processors, SGML or
+-     XML for which the DTD and/or processing tools are not generally
+-     available, and the machine-generated HTML, PostScript or PDF
+-     produced by some word processors for output purposes only.
++     SGML or XML using a publicly available DTD, and standard-conforming
++     simple HTML, PostScript or PDF designed for human modification.
++     Examples of transparent image formats include PNG, XCF and JPG.
++     Opaque formats include proprietary formats that can be read and
++     edited only by proprietary word processors, SGML or XML for which
++     the DTD and/or processing tools are not generally available, and
++     the machine-generated HTML, PostScript or PDF produced by some word
++     processors for output purposes only.
+ 
+      The "Title Page" means, for a printed book, the title page itself,
+      plus such following pages as are needed to hold, legibly, the
+@@ -348,8 +337,8 @@ A.1 GNU Free Documentation License
+      may not use technical measures to obstruct or control the reading
+      or further copying of the copies you make or distribute.  However,
+      you may accept compensation in exchange for copies.  If you
+-     distribute a large enough number of copies you must also follow
+-     the conditions in section 3.
++     distribute a large enough number of copies you must also follow the
++     conditions in section 3.
+ 
+      You may also lend copies, under the same conditions stated above,
+      and you may publicly display copies.
+@@ -363,12 +352,11 @@ A.1 GNU Free Documentation License
+      these Cover Texts: Front-Cover Texts on the front cover, and
+      Back-Cover Texts on the back cover.  Both covers must also clearly
+      and legibly identify you as the publisher of these copies.  The
+-     front cover must present the full title with all words of the
+-     title equally prominent and visible.  You may add other material
+-     on the covers in addition.  Copying with changes limited to the
+-     covers, as long as they preserve the title of the Document and
+-     satisfy these conditions, can be treated as verbatim copying in
+-     other respects.
++     front cover must present the full title with all words of the title
++     equally prominent and visible.  You may add other material on the
++     covers in addition.  Copying with changes limited to the covers, as
++     long as they preserve the title of the Document and satisfy these
++     conditions, can be treated as verbatim copying in other respects.
+ 
+      If the required texts for either cover are too voluminous to fit
+      legibly, you should put the first ones listed (as many as fit
+@@ -376,40 +364,39 @@ A.1 GNU Free Documentation License
+      adjacent pages.
+ 
+      If you publish or distribute Opaque copies of the Document
+-     numbering more than 100, you must either include a
+-     machine-readable Transparent copy along with each Opaque copy, or
+-     state in or with each Opaque copy a computer-network location from
+-     which the general network-using public has access to download
+-     using public-standard network protocols a complete Transparent
+-     copy of the Document, free of added material.  If you use the
+-     latter option, you must take reasonably prudent steps, when you
+-     begin distribution of Opaque copies in quantity, to ensure that
+-     this Transparent copy will remain thus accessible at the stated
+-     location until at least one year after the last time you
+-     distribute an Opaque copy (directly or through your agents or
+-     retailers) of that edition to the public.
++     numbering more than 100, you must either include a machine-readable
++     Transparent copy along with each Opaque copy, or state in or with
++     each Opaque copy a computer-network location from which the general
++     network-using public has access to download using public-standard
++     network protocols a complete Transparent copy of the Document, free
++     of added material.  If you use the latter option, you must take
++     reasonably prudent steps, when you begin distribution of Opaque
++     copies in quantity, to ensure that this Transparent copy will
++     remain thus accessible at the stated location until at least one
++     year after the last time you distribute an Opaque copy (directly or
++     through your agents or retailers) of that edition to the public.
+ 
+      It is requested, but not required, that you contact the authors of
+-     the Document well before redistributing any large number of
+-     copies, to give them a chance to provide you with an updated
+-     version of the Document.
++     the Document well before redistributing any large number of copies,
++     to give them a chance to provide you with an updated version of the
++     Document.
+ 
+   4. MODIFICATIONS
+ 
+      You may copy and distribute a Modified Version of the Document
+      under the conditions of sections 2 and 3 above, provided that you
+-     release the Modified Version under precisely this License, with
+-     the Modified Version filling the role of the Document, thus
+-     licensing distribution and modification of the Modified Version to
+-     whoever possesses a copy of it.  In addition, you must do these
+-     things in the Modified Version:
++     release the Modified Version under precisely this License, with the
++     Modified Version filling the role of the Document, thus licensing
++     distribution and modification of the Modified Version to whoever
++     possesses a copy of it.  In addition, you must do these things in
++     the Modified Version:
+ 
+        A. Use in the Title Page (and on the covers, if any) a title
+-          distinct from that of the Document, and from those of
+-          previous versions (which should, if there were any, be listed
+-          in the History section of the Document).  You may use the
+-          same title as a previous version if the original publisher of
+-          that version gives permission.
++          distinct from that of the Document, and from those of previous
++          versions (which should, if there were any, be listed in the
++          History section of the Document).  You may use the same title
++          as a previous version if the original publisher of that
++          version gives permission.
+ 
+        B. List on the Title Page, as authors, one or more persons or
+           entities responsible for authorship of the modifications in
+@@ -439,31 +426,30 @@ A.1 GNU Free Documentation License
+ 
+        I. Preserve the section Entitled "History", Preserve its Title,
+           and add to it an item stating at least the title, year, new
+-          authors, and publisher of the Modified Version as given on
+-          the Title Page.  If there is no section Entitled "History" in
+-          the Document, create one stating the title, year, authors,
+-          and publisher of the Document as given on its Title Page,
+-          then add an item describing the Modified Version as stated in
+-          the previous sentence.
++          authors, and publisher of the Modified Version as given on the
++          Title Page.  If there is no section Entitled "History" in the
++          Document, create one stating the title, year, authors, and
++          publisher of the Document as given on its Title Page, then add
++          an item describing the Modified Version as stated in the
++          previous sentence.
+ 
+        J. Preserve the network location, if any, given in the Document
+           for public access to a Transparent copy of the Document, and
+           likewise the network locations given in the Document for
+-          previous versions it was based on.  These may be placed in
+-          the "History" section.  You may omit a network location for a
+-          work that was published at least four years before the
+-          Document itself, or if the original publisher of the version
+-          it refers to gives permission.
++          previous versions it was based on.  These may be placed in the
++          "History" section.  You may omit a network location for a work
++          that was published at least four years before the Document
++          itself, or if the original publisher of the version it refers
++          to gives permission.
+ 
+        K. For any section Entitled "Acknowledgements" or "Dedications",
+-          Preserve the Title of the section, and preserve in the
+-          section all the substance and tone of each of the contributor
++          Preserve the Title of the section, and preserve in the section
++          all the substance and tone of each of the contributor
+           acknowledgements and/or dedications given therein.
+ 
+-       L. Preserve all the Invariant Sections of the Document,
+-          unaltered in their text and in their titles.  Section numbers
+-          or the equivalent are not considered part of the section
+-          titles.
++       L. Preserve all the Invariant Sections of the Document, unaltered
++          in their text and in their titles.  Section numbers or the
++          equivalent are not considered part of the section titles.
+ 
+        M. Delete any section Entitled "Endorsements".  Such a section
+           may not be included in the Modified Version.
+@@ -476,11 +462,11 @@ A.1 GNU Free Documentation License
+ 
+      If the Modified Version includes new front-matter sections or
+      appendices that qualify as Secondary Sections and contain no
+-     material copied from the Document, you may at your option
+-     designate some or all of these sections as invariant.  To do this,
+-     add their titles to the list of Invariant Sections in the Modified
+-     Version's license notice.  These titles must be distinct from any
+-     other section titles.
++     material copied from the Document, you may at your option designate
++     some or all of these sections as invariant.  To do this, add their
++     titles to the list of Invariant Sections in the Modified Version's
++     license notice.  These titles must be distinct from any other
++     section titles.
+ 
+      You may add a section Entitled "Endorsements", provided it contains
+      nothing but endorsements of your Modified Version by various
+@@ -489,15 +475,15 @@ A.1 GNU Free Documentation License
+      definition of a standard.
+ 
+      You may add a passage of up to five words as a Front-Cover Text,
+-     and a passage of up to 25 words as a Back-Cover Text, to the end
+-     of the list of Cover Texts in the Modified Version.  Only one
+-     passage of Front-Cover Text and one of Back-Cover Text may be
+-     added by (or through arrangements made by) any one entity.  If the
+-     Document already includes a cover text for the same cover,
+-     previously added by you or by arrangement made by the same entity
+-     you are acting on behalf of, you may not add another; but you may
+-     replace the old one, on explicit permission from the previous
+-     publisher that added the old one.
++     and a passage of up to 25 words as a Back-Cover Text, to the end of
++     the list of Cover Texts in the Modified Version.  Only one passage
++     of Front-Cover Text and one of Back-Cover Text may be added by (or
++     through arrangements made by) any one entity.  If the Document
++     already includes a cover text for the same cover, previously added
++     by you or by arrangement made by the same entity you are acting on
++     behalf of, you may not add another; but you may replace the old
++     one, on explicit permission from the previous publisher that added
++     the old one.
+ 
+      The author(s) and publisher(s) of the Document do not by this
+      License give permission to use their names for publicity for or to
+@@ -507,8 +493,8 @@ A.1 GNU Free Documentation License
+ 
+      You may combine the Document with other documents released under
+      this License, under the terms defined in section 4 above for
+-     modified versions, provided that you include in the combination
+-     all of the Invariant Sections of all of the original documents,
++     modified versions, provided that you include in the combination all
++     of the Invariant Sections of all of the original documents,
+      unmodified, and list them all as Invariant Sections of your
+      combined work in its license notice, and that you preserve all
+      their Warranty Disclaimers.
+@@ -535,20 +521,20 @@ A.1 GNU Free Documentation License
+      documents released under this License, and replace the individual
+      copies of this License in the various documents with a single copy
+      that is included in the collection, provided that you follow the
+-     rules of this License for verbatim copying of each of the
+-     documents in all other respects.
++     rules of this License for verbatim copying of each of the documents
++     in all other respects.
+ 
+      You may extract a single document from such a collection, and
+      distribute it individually under this License, provided you insert
+-     a copy of this License into the extracted document, and follow
+-     this License in all other respects regarding verbatim copying of
+-     that document.
++     a copy of this License into the extracted document, and follow this
++     License in all other respects regarding verbatim copying of that
++     document.
+ 
+   7. AGGREGATION WITH INDEPENDENT WORKS
+ 
+      A compilation of the Document or its derivatives with other
+-     separate and independent documents or works, in or on a volume of
+-     a storage or distribution medium, is called an "aggregate" if the
++     separate and independent documents or works, in or on a volume of a
++     storage or distribution medium, is called an "aggregate" if the
+      copyright resulting from the compilation is not used to limit the
+      legal rights of the compilation's users beyond what the individual
+      works permit.  When the Document is included in an aggregate, this
+@@ -591,26 +577,26 @@ A.1 GNU Free Documentation License
+      attempt to copy, modify, sublicense or distribute the Document is
+      void, and will automatically terminate your rights under this
+      License.  However, parties who have received copies, or rights,
+-     from you under this License will not have their licenses
+-     terminated so long as such parties remain in full compliance.
++     from you under this License will not have their licenses terminated
++     so long as such parties remain in full compliance.
+ 
+- 10. FUTURE REVISIONS OF THIS LICENSE
++  10. FUTURE REVISIONS OF THIS LICENSE
+ 
+      The Free Software Foundation may publish new, revised versions of
+      the GNU Free Documentation License from time to time.  Such new
+      versions will be similar in spirit to the present version, but may
+      differ in detail to address new problems or concerns.  See
+-     `http://www.gnu.org/copyleft/'.
++     <http://www.gnu.org/copyleft/>.
+ 
+      Each version of the License is given a distinguishing version
+      number.  If the Document specifies that a particular numbered
+      version of this License "or any later version" applies to it, you
+      have the option of following the terms and conditions either of
+      that specified version or of any later version that has been
+-     published (not as a draft) by the Free Software Foundation.  If
+-     the Document does not specify a version number of this License,
+-     you may choose any version ever published (not as a draft) by the
+-     Free Software Foundation.
++     published (not as a draft) by the Free Software Foundation.  If the
++     Document does not specify a version number of this License, you may
++     choose any version ever published (not as a draft) by the Free
++     Software Foundation.
+ 
+ A.1.1 ADDENDUM: How to use this License for your documents
+ ----------------------------------------------------------
+@@ -628,7 +614,7 @@ notices just after the title page:
+        Free Documentation License''.
+ 
+    If you have Invariant Sections, Front-Cover Texts and Back-Cover
+-Texts, replace the "with...Texts." line with this:
++Texts, replace the "with...Texts."  line with this:
+ 
+          with the Invariant Sections being LIST THEIR TITLES, with
+          the Front-Cover Texts being LIST, and with the Back-Cover Texts
+@@ -639,9 +625,9 @@ combination of the three, merge those tw
+ situation.
+ 
+    If your document contains nontrivial examples of program code, we
+-recommend releasing these examples in parallel under your choice of
+-free software license, such as the GNU General Public License, to
+-permit their use in free software.
++recommend releasing these examples in parallel under your choice of free
++software license, such as the GNU General Public License, to permit
++their use in free software.
+ 
+ 
+ File: hello.info,  Node: Concept index,  Prev: Copying this manual,  Up: Top
+@@ -653,8 +639,8 @@ Concept index
+ * Menu:
+ 
+ * --greeting:                            Invoking hello.       (line 14)
+-* --help <1>:                            Invoking hello.       (line 18)
+ * --help:                                Overview.             (line 39)
++* --help <1>:                            Invoking hello.       (line 18)
+ * --next-generation:                     Invoking hello.       (line 29)
+ * --traditional:                         Invoking hello.       (line 34)
+ * --version:                             Invoking hello.       (line 39)
+@@ -663,37 +649,37 @@ Concept index
+ * -n:                                    Invoking hello.       (line 29)
+ * -t:                                    Invoking hello.       (line 34)
+ * -v:                                    Invoking hello.       (line 39)
+-* authors:                               Overview.             (line 57)
++* authors:                               Overview.             (line 56)
+ * Autoconf:                              Overview.             (line 28)
+ * Automake:                              Overview.             (line 28)
+-* Berry, Karl:                           Overview.             (line 57)
+-* Brittenson, Jan:                       Overview.             (line 57)
++* Berry, Karl:                           Overview.             (line 56)
++* Brittenson, Jan:                       Overview.             (line 56)
+ * bug reporting:                         Reporting bugs.       (line  6)
+ * checklist for bug reports:             Reporting bugs.       (line  9)
+-* Eichwalder, Karl:                      Overview.             (line 57)
++* Eichwalder, Karl:                      Overview.             (line 56)
+ * environment variables, help for:       Invoking hello.       (line 21)
+ * examples:                              Sample output.        (line  6)
+ * FDL, GNU Free Documentation License:   GNU Free Documentation License.
+                                                                (line  6)
+-* Friedman, Noah:                        Overview.             (line 57)
++* Friedman, Noah:                        Overview.             (line 56)
+ * Gettext:                               Overview.             (line 35)
+ * GNU coding standards:                  Overview.             (line 20)
+ * GNU maintainer standards:              Overview.             (line 20)
+ * Gnulib:                                Overview.             (line 32)
+ * greetings:                             Overview.             (line  6)
+-* Haertel, Mike:                         Overview.             (line 57)
+-* Hannum, Charles:                       Overview.             (line 57)
++* Haertel, Mike:                         Overview.             (line 56)
++* Hannum, Charles:                       Overview.             (line 56)
+ * help:                                  Invoking hello.       (line  6)
+ * Help2man:                              Overview.             (line 43)
+ * invoking:                              Invoking hello.       (line  6)
+ * joke, not:                             Overview.             (line 15)
+-* King, The:                             Overview.             (line 57)
+-* MacKenzie, David:                      Overview.             (line 57)
+-* McGrath, Roland:                       Overview.             (line 57)
++* King, The:                             Overview.             (line 56)
++* MacKenzie, David:                      Overview.             (line 56)
++* McGrath, Roland:                       Overview.             (line 56)
+ * modern:                                Invoking hello.       (line 34)
+ * options:                               Invoking hello.       (line  6)
+ * overview:                              Overview.             (line  6)
+-* patches, contributing:                 Reporting bugs.       (line 32)
++* patches, contributing:                 Reporting bugs.       (line 25)
+ * problems:                              Reporting bugs.       (line  6)
+ * reporting bugs:                        Reporting bugs.       (line  6)
+ * sample output:                         Sample output.        (line  6)
+@@ -709,13 +695,18 @@ Concept index
+ 
+ 
+ Tag Table:
+-Node: Top1073
+-Node: Overview1525
+-Node: Sample output4129
+-Node: Invoking hello4529
+-Node: Reporting bugs5677
+-Node: Copying this manual6944
+-Node: GNU Free Documentation License7189
+-Node: Concept index29598
++Node: Top1062
++Node: Overview1510
++Node: Sample output4091
++Node: Invoking hello4491
++Node: Reporting bugs5638
++Node: Copying this manual6877
++Node: GNU Free Documentation License7122
++Node: Concept index29512
+ 
+ End Tag Table
++
++
++Local Variables:
++coding: utf-8
++End:
+--- hello-2.2.orig/src/Makefile
++++ hello-2.2/src/Makefile
+@@ -1,465 +1,28 @@
+-# Makefile.in generated by automake 1.10 from Makefile.am.
+-# src/Makefile.  Generated from Makefile.in by configure.
++## Process this file with automake to produce Makefile.in.
++## Makefile.am for hello/src.
++##
++## Copyright (C) 1996, 1997, 2001, 2005, 2006 Free Software Foundation, Inc.
++##
++## This program is free software; you can redistribute it and/or modify
++## it under the terms of the GNU General Public License as published by
++## the Free Software Foundation; either version 2, or (at your option)
++## any later version.
++##
++## This program is distributed in the hope that it will be useful,
++## but WITHOUT ANY WARRANTY; without even the implied warranty of
++## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++## GNU General Public License for more details.
++##
++## You should have received a copy of the GNU General Public License
++## along with this program; if not, write to the Free Software Foundation,
++## Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ 
+-# Copyright (C) 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002,
+-# 2003, 2004, 2005, 2006  Free Software Foundation, Inc.
+-# This Makefile.in is free software; the Free Software Foundation
+-# gives unlimited permission to copy and/or distribute it,
+-# with or without modifications, as long as this notice is preserved.
+-
+-# This program is distributed in the hope that it will be useful,
+-# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+-# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+-# PARTICULAR PURPOSE.
+-
+-
+-
+-
+-pkgdatadir = $(datadir)/hello
+-pkglibdir = $(libdir)/hello
+-pkgincludedir = $(includedir)/hello
+-am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
+-install_sh_DATA = $(install_sh) -c -m 644
+-install_sh_PROGRAM = $(install_sh) -c
+-install_sh_SCRIPT = $(install_sh) -c
+-INSTALL_HEADER = $(INSTALL_DATA)
+-transform = $(program_transform_name)
+-NORMAL_INSTALL = :
+-PRE_INSTALL = :
+-POST_INSTALL = :
+-NORMAL_UNINSTALL = :
+-PRE_UNINSTALL = :
+-POST_UNINSTALL = :
+-build_triplet = x86_64-unknown-linux-gnu
+-host_triplet = x86_64-unknown-linux-gnu
+-bin_PROGRAMS = hello$(EXEEXT)
+-subdir = src
+-DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in ChangeLog
+-ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
+-am__aclocal_m4_deps = $(top_srcdir)/gnulib/m4/close-stream.m4 \
+-	$(top_srcdir)/gnulib/m4/closeout.m4 \
+-	$(top_srcdir)/gnulib/m4/error.m4 \
+-	$(top_srcdir)/gnulib/m4/exitfail.m4 \
+-	$(top_srcdir)/gnulib/m4/fpending.m4 \
+-	$(top_srcdir)/gnulib/m4/getopt.m4 \
+-	$(top_srcdir)/gnulib/m4/gettext.m4 \
+-	$(top_srcdir)/gnulib/m4/gnulib-comp.m4 \
+-	$(top_srcdir)/gnulib/m4/iconv.m4 \
+-	$(top_srcdir)/gnulib/m4/inline.m4 \
+-	$(top_srcdir)/gnulib/m4/lib-ld.m4 \
+-	$(top_srcdir)/gnulib/m4/lib-link.m4 \
+-	$(top_srcdir)/gnulib/m4/lib-prefix.m4 \
+-	$(top_srcdir)/gnulib/m4/lock.m4 \
+-	$(top_srcdir)/gnulib/m4/mbrtowc.m4 \
+-	$(top_srcdir)/gnulib/m4/mbstate_t.m4 \
+-	$(top_srcdir)/gnulib/m4/nls.m4 $(top_srcdir)/gnulib/m4/po.m4 \
+-	$(top_srcdir)/gnulib/m4/progtest.m4 \
+-	$(top_srcdir)/gnulib/m4/quotearg.m4 \
+-	$(top_srcdir)/gnulib/m4/stdbool.m4 \
+-	$(top_srcdir)/gnulib/m4/unistd_h.m4 \
+-	$(top_srcdir)/gnulib/m4/xalloc.m4 $(top_srcdir)/configure.ac
+-am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
+-	$(ACLOCAL_M4)
+-mkinstalldirs = $(SHELL) $(top_srcdir)/build-aux/mkinstalldirs
+-CONFIG_HEADER = $(top_builddir)/config.h
+-CONFIG_CLEAN_FILES =
+-am__installdirs = "$(DESTDIR)$(bindir)"
+-binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
+-PROGRAMS = $(bin_PROGRAMS)
+-am_hello_OBJECTS = hello.$(OBJEXT)
+-hello_OBJECTS = $(am_hello_OBJECTS)
+-hello_DEPENDENCIES = ../gnulib/lib/libgnu.a
+-DEFAULT_INCLUDES = -I. -I$(top_builddir)
+-depcomp = $(SHELL) $(top_srcdir)/build-aux/depcomp
+-am__depfiles_maybe = depfiles
+-COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
+-	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+-CCLD = $(CC)
+-LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
+-SOURCES = $(hello_SOURCES)
+-DIST_SOURCES = $(hello_SOURCES)
+-ETAGS = etags
+-CTAGS = ctags
+-DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+-ACLOCAL = ${SHELL} /home/craigyang/workplace/hpe_work/package/hello/hello/build-aux/missing --run aclocal-1.10
+-AMTAR = ${SHELL} /home/craigyang/workplace/hpe_work/package/hello/hello/build-aux/missing --run tar
+-AUTOCONF = ${SHELL} /home/craigyang/workplace/hpe_work/package/hello/hello/build-aux/missing --run autoconf
+-AUTOHEADER = ${SHELL} /home/craigyang/workplace/hpe_work/package/hello/hello/build-aux/missing --run autoheader
+-AUTOMAKE = ${SHELL} /home/craigyang/workplace/hpe_work/package/hello/hello/build-aux/missing --run automake-1.10
+-AWK = gawk
+-CC = gcc
+-CCDEPMODE = depmode=gcc3
+-CFLAGS = -g -O2
+-CPP = gcc -E
+-CPPFLAGS = 
+-CYGPATH_W = echo
+-DEFS = -DLOCALEDIR=\"$(localedir)\" -DHAVE_CONFIG_H
+-DEPDIR = .deps
+-ECHO_C = 
+-ECHO_N = -n
+-ECHO_T = 
+-EGREP = /bin/grep -E
+-EXEEXT = 
+-GETOPT_H = 
+-GMSGFMT = /bin/msgfmt
+-GMSGFMT_015 = /bin/msgfmt
+-GREP = /bin/grep
+-HAVE__BOOL = 1
+-HELP2MAN = ${SHELL} /home/craigyang/workplace/hpe_work/package/hello/hello/build-aux/missing --run help2man
+-INSTALL = /bin/install -c
+-INSTALL_DATA = ${INSTALL} -m 644
+-INSTALL_PROGRAM = ${INSTALL}
+-INSTALL_SCRIPT = ${INSTALL}
+-INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
+-INTLLIBS = 
+-INTL_MACOSX_LIBS = 
+-LDFLAGS = 
+-LIBGNU_LIBDEPS = 
+-LIBGNU_LTLIBDEPS = 
+-LIBICONV = -liconv
+-LIBINTL = 
+-LIBOBJS = 
+-LIBS = 
+-LTLIBICONV = -liconv
+-LTLIBINTL = 
+-LTLIBOBJS = 
+-MAKEINFO = ${SHELL} /home/craigyang/workplace/hpe_work/package/hello/hello/build-aux/missing --run makeinfo
+-MKDIR_P = /bin/mkdir -p
+-MSGFMT = /bin/msgfmt
+-MSGFMT_015 = /bin/msgfmt
+-MSGMERGE = /bin/msgmerge
+-OBJEXT = o
+-PACKAGE = hello
+-PACKAGE_BUGREPORT = bug-hello@gnu.org
+-PACKAGE_NAME = GNU Hello
+-PACKAGE_STRING = GNU Hello 2.2
+-PACKAGE_TARNAME = hello
+-PACKAGE_VERSION = 2.2
+-PATH_SEPARATOR = :
+-POSUB = po
+-RANLIB = ranlib
+-SET_MAKE = 
+-SHELL = /bin/bash
+-STDBOOL_H = 
+-STRIP = 
+-UNISTD_H = 
+-USE_NLS = yes
+-VERSION = 2.2
+-XGETTEXT = /bin/xgettext
+-XGETTEXT_015 = /bin/xgettext
+-abs_builddir = /home/craigyang/workplace/hpe_work/package/hello/hello/src
+-abs_srcdir = /home/craigyang/workplace/hpe_work/package/hello/hello/src
+-abs_top_builddir = /home/craigyang/workplace/hpe_work/package/hello/hello
+-abs_top_srcdir = /home/craigyang/workplace/hpe_work/package/hello/hello
+-ac_ct_CC = gcc
+-am__include = include
+-am__leading_dot = .
+-am__quote = 
+-am__tar = ${AMTAR} chof - "$$tardir"
+-am__untar = ${AMTAR} xf -
+-bindir = ${exec_prefix}/bin
+-build = x86_64-unknown-linux-gnu
+-build_alias = 
+-build_cpu = x86_64
+-build_os = linux-gnu
+-build_vendor = unknown
+-builddir = .
+-datadir = ${datarootdir}
+-datarootdir = ${prefix}/share
+-docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
+-dvidir = ${docdir}
+-exec_prefix = ${prefix}
+-gl_LIBOBJS =  close-stream.o closeout.o exitfail.o quotearg.o xmalloc.o
+-gl_LTLIBOBJS =  close-stream.lo closeout.lo exitfail.lo quotearg.lo xmalloc.lo
+-host = x86_64-unknown-linux-gnu
+-host_alias = 
+-host_cpu = x86_64
+-host_os = linux-gnu
+-host_vendor = unknown
+-htmldir = ${docdir}
+-includedir = ${prefix}/include
+-infodir = ${datarootdir}/info
+-install_sh = $(SHELL) /home/craigyang/workplace/hpe_work/package/hello/hello/build-aux/install-sh
+-libdir = ${exec_prefix}/lib
+-libexecdir = ${exec_prefix}/libexec
+-localedir = $(datadir)/locale
+-localstatedir = ${prefix}/var
+-mandir = ${datarootdir}/man
+-mkdir_p = /bin/mkdir -p
+-oldincludedir = /usr/include
+-pdfdir = ${docdir}
+-prefix = /usr/local
+-program_transform_name = s,x,x,
+-psdir = ${docdir}
+-sbindir = ${exec_prefix}/sbin
+-sharedstatedir = ${prefix}/com
+-srcdir = .
+-sysconfdir = ${prefix}/etc
+-target_alias = 
+-top_builddir = ..
+-top_srcdir = ..
++bin_PROGRAMS = hello
+ hello_SOURCES = hello.c system.h
+-hello_LDADD =  ../gnulib/lib/libgnu.a
+-AM_CPPFLAGS = -I$(top_srcdir)/gnulib/lib -I$(top_builddir)/gnulib/lib
+-all: all-am
+-
+-.SUFFIXES:
+-.SUFFIXES: .c .o .obj
+-$(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
+-	@for dep in $?; do \
+-	  case '$(am__configure_deps)' in \
+-	    *$$dep*) \
+-	      cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh \
+-		&& exit 0; \
+-	      exit 1;; \
+-	  esac; \
+-	done; \
+-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  src/Makefile'; \
+-	cd $(top_srcdir) && \
+-	  $(AUTOMAKE) --gnu  src/Makefile
+-.PRECIOUS: Makefile
+-Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
+-	@case '$?' in \
+-	  *config.status*) \
+-	    cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh;; \
+-	  *) \
+-	    echo ' cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe)'; \
+-	    cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@ $(am__depfiles_maybe);; \
+-	esac;
+-
+-$(top_builddir)/config.status: $(top_srcdir)/configure $(CONFIG_STATUS_DEPENDENCIES)
+-	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
+-
+-$(top_srcdir)/configure:  $(am__configure_deps)
+-	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
+-$(ACLOCAL_M4):  $(am__aclocal_m4_deps)
+-	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
+-install-binPROGRAMS: $(bin_PROGRAMS)
+-	@$(NORMAL_INSTALL)
+-	test -z "$(bindir)" || $(MKDIR_P) "$(DESTDIR)$(bindir)"
+-	@list='$(bin_PROGRAMS)'; for p in $$list; do \
+-	  p1=`echo $$p|sed 's/$(EXEEXT)$$//'`; \
+-	  if test -f $$p \
+-	  ; then \
+-	    f=`echo "$$p1" | sed 's,^.*/,,;$(transform);s/$$/$(EXEEXT)/'`; \
+-	   echo " $(INSTALL_PROGRAM_ENV) $(binPROGRAMS_INSTALL) '$$p' '$(DESTDIR)$(bindir)/$$f'"; \
+-	   $(INSTALL_PROGRAM_ENV) $(binPROGRAMS_INSTALL) "$$p" "$(DESTDIR)$(bindir)/$$f" || exit 1; \
+-	  else :; fi; \
+-	done
+-
+-uninstall-binPROGRAMS:
+-	@$(NORMAL_UNINSTALL)
+-	@list='$(bin_PROGRAMS)'; for p in $$list; do \
+-	  f=`echo "$$p" | sed 's,^.*/,,;s/$(EXEEXT)$$//;$(transform);s/$$/$(EXEEXT)/'`; \
+-	  echo " rm -f '$(DESTDIR)$(bindir)/$$f'"; \
+-	  rm -f "$(DESTDIR)$(bindir)/$$f"; \
+-	done
+-
+-clean-binPROGRAMS:
+-	-test -z "$(bin_PROGRAMS)" || rm -f $(bin_PROGRAMS)
+-hello$(EXEEXT): $(hello_OBJECTS) $(hello_DEPENDENCIES) 
+-	@rm -f hello$(EXEEXT)
+-	$(LINK) $(hello_OBJECTS) $(hello_LDADD) $(LIBS)
+-
+-mostlyclean-compile:
+-	-rm -f *.$(OBJEXT)
+-
+-distclean-compile:
+-	-rm -f *.tab.c
+-
+-include ./$(DEPDIR)/hello.Po
+-
+-.c.o:
+-	$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
+-	mv -f $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
+-#	source='$<' object='$@' libtool=no \
+-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+-#	$(COMPILE) -c $<
+-
+-.c.obj:
+-	$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ `$(CYGPATH_W) '$<'`
+-	mv -f $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
+-#	source='$<' object='$@' libtool=no \
+-#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+-#	$(COMPILE) -c `$(CYGPATH_W) '$<'`
+-
+-ID: $(HEADERS) $(SOURCES) $(LISP) $(TAGS_FILES)
+-	list='$(SOURCES) $(HEADERS) $(LISP) $(TAGS_FILES)'; \
+-	unique=`for i in $$list; do \
+-	    if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
+-	  done | \
+-	  $(AWK) '    { files[$$0] = 1; } \
+-	       END { for (i in files) print i; }'`; \
+-	mkid -fID $$unique
+-tags: TAGS
+-
+-TAGS:  $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) \
+-		$(TAGS_FILES) $(LISP)
+-	tags=; \
+-	here=`pwd`; \
+-	list='$(SOURCES) $(HEADERS)  $(LISP) $(TAGS_FILES)'; \
+-	unique=`for i in $$list; do \
+-	    if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
+-	  done | \
+-	  $(AWK) '    { files[$$0] = 1; } \
+-	       END { for (i in files) print i; }'`; \
+-	if test -z "$(ETAGS_ARGS)$$tags$$unique"; then :; else \
+-	  test -n "$$unique" || unique=$$empty_fix; \
+-	  $(ETAGS) $(ETAGSFLAGS) $(AM_ETAGSFLAGS) $(ETAGS_ARGS) \
+-	    $$tags $$unique; \
+-	fi
+-ctags: CTAGS
+-CTAGS:  $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) \
+-		$(TAGS_FILES) $(LISP)
+-	tags=; \
+-	here=`pwd`; \
+-	list='$(SOURCES) $(HEADERS)  $(LISP) $(TAGS_FILES)'; \
+-	unique=`for i in $$list; do \
+-	    if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
+-	  done | \
+-	  $(AWK) '    { files[$$0] = 1; } \
+-	       END { for (i in files) print i; }'`; \
+-	test -z "$(CTAGS_ARGS)$$tags$$unique" \
+-	  || $(CTAGS) $(CTAGSFLAGS) $(AM_CTAGSFLAGS) $(CTAGS_ARGS) \
+-	     $$tags $$unique
+-
+-GTAGS:
+-	here=`$(am__cd) $(top_builddir) && pwd` \
+-	  && cd $(top_srcdir) \
+-	  && gtags -i $(GTAGS_ARGS) $$here
+-
+-distclean-tags:
+-	-rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+-
+-distdir: $(DISTFILES)
+-	@srcdirstrip=`echo "$(srcdir)" | sed 's/[].[^$$\\*]/\\\\&/g'`; \
+-	topsrcdirstrip=`echo "$(top_srcdir)" | sed 's/[].[^$$\\*]/\\\\&/g'`; \
+-	list='$(DISTFILES)'; \
+-	  dist_files=`for file in $$list; do echo $$file; done | \
+-	  sed -e "s|^$$srcdirstrip/||;t" \
+-	      -e "s|^$$topsrcdirstrip/|$(top_builddir)/|;t"`; \
+-	case $$dist_files in \
+-	  */*) $(MKDIR_P) `echo "$$dist_files" | \
+-			   sed '/\//!d;s|^|$(distdir)/|;s,/[^/]*$$,,' | \
+-			   sort -u` ;; \
+-	esac; \
+-	for file in $$dist_files; do \
+-	  if test -f $$file || test -d $$file; then d=.; else d=$(srcdir); fi; \
+-	  if test -d $$d/$$file; then \
+-	    dir=`echo "/$$file" | sed -e 's,/[^/]*$$,,'`; \
+-	    if test -d $(srcdir)/$$file && test $$d != $(srcdir); then \
+-	      cp -pR $(srcdir)/$$file $(distdir)$$dir || exit 1; \
+-	    fi; \
+-	    cp -pR $$d/$$file $(distdir)$$dir || exit 1; \
+-	  else \
+-	    test -f $(distdir)/$$file \
+-	    || cp -p $$d/$$file $(distdir)/$$file \
+-	    || exit 1; \
+-	  fi; \
+-	done
+-check-am: all-am
+-check: check-am
+-all-am: Makefile $(PROGRAMS)
+-installdirs:
+-	for dir in "$(DESTDIR)$(bindir)"; do \
+-	  test -z "$$dir" || $(MKDIR_P) "$$dir"; \
+-	done
+-install: install-am
+-install-exec: install-exec-am
+-install-data: install-data-am
+-uninstall: uninstall-am
+-
+-install-am: all-am
+-	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+-
+-installcheck: installcheck-am
+-install-strip:
+-	$(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \
+-	  install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \
+-	  `test -z '$(STRIP)' || \
+-	    echo "INSTALL_PROGRAM_ENV=STRIPPROG='$(STRIP)'"` install
+-mostlyclean-generic:
+-
+-clean-generic:
+-
+-distclean-generic:
+-	-test -z "$(CONFIG_CLEAN_FILES)" || rm -f $(CONFIG_CLEAN_FILES)
+-
+-maintainer-clean-generic:
+-	@echo "This command is intended for maintainers to use"
+-	@echo "it deletes files that may require special tools to rebuild."
+-clean: clean-am
+ 
+-clean-am: clean-binPROGRAMS clean-generic mostlyclean-am
++hello_LDADD = @LIBINTL@ ../gnulib/lib/libgnu.a
+ 
+-distclean: distclean-am
+-	-rm -rf ./$(DEPDIR)
+-	-rm -f Makefile
+-distclean-am: clean-am distclean-compile distclean-generic \
+-	distclean-tags
+-
+-dvi: dvi-am
+-
+-dvi-am:
+-
+-html: html-am
+-
+-info: info-am
+-
+-info-am:
+-
+-install-data-am:
+-
+-install-dvi: install-dvi-am
+-
+-install-exec-am: install-binPROGRAMS
+-
+-install-html: install-html-am
+-
+-install-info: install-info-am
+-
+-install-man:
+-
+-install-pdf: install-pdf-am
+-
+-install-ps: install-ps-am
+-
+-installcheck-am:
+-
+-maintainer-clean: maintainer-clean-am
+-	-rm -rf ./$(DEPDIR)
+-	-rm -f Makefile
+-maintainer-clean-am: distclean-am maintainer-clean-generic
+-
+-mostlyclean: mostlyclean-am
+-
+-mostlyclean-am: mostlyclean-compile mostlyclean-generic
+-
+-pdf: pdf-am
+-
+-pdf-am:
+-
+-ps: ps-am
+-
+-ps-am:
+-
+-uninstall-am: uninstall-binPROGRAMS
+-
+-.MAKE: install-am install-strip
+-
+-.PHONY: CTAGS GTAGS all all-am check check-am clean clean-binPROGRAMS \
+-	clean-generic ctags distclean distclean-compile \
+-	distclean-generic distclean-tags distdir dvi dvi-am html \
+-	html-am info info-am install install-am install-binPROGRAMS \
+-	install-data install-data-am install-dvi install-dvi-am \
+-	install-exec install-exec-am install-html install-html-am \
+-	install-info install-info-am install-man install-pdf \
+-	install-pdf-am install-ps install-ps-am install-strip \
+-	installcheck installcheck-am installdirs maintainer-clean \
+-	maintainer-clean-generic mostlyclean mostlyclean-compile \
+-	mostlyclean-generic pdf pdf-am ps ps-am tags uninstall \
+-	uninstall-am uninstall-binPROGRAMS
++localedir = $(datadir)/locale
+ 
+-# Tell versions [3.59,3.63) of GNU make to not export all variables.
+-# Otherwise a system limit (for SysV at least) may be exceeded.
+-.NOEXPORT:
++AM_CPPFLAGS = -I$(top_srcdir)/gnulib/lib -I$(top_builddir)/gnulib/lib
++DEFS = -DLOCALEDIR=\"$(localedir)\" @DEFS@

@@ -1,0 +1,56 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Tue, 13 Jun 2023 13:43:35 +0800
+Source: hello
+Binary: hello
+Architecture: source amd64
+Version: 2.2-1
+Distribution: unstable
+Urgency: low
+Maintainer: Craig Yang <nikeasyanzi@gmail.com>
+Changed-By: Craig Yang <nikeasyanzi@gmail.com>
+Description:
+ hello      - Hello testing package
+Closes: 123456
+Changes:
+ hello (2.2-1) unstable; urgency=low
+ .
+   * Initial release (Closes: #123456)
+Checksums-Sha1:
+ ee41bdba6e8a3fb44995f26b3348685fa546307d 1527 hello_2.2-1.dsc
+ 9238accd00fd1bd3e3ec04d0396f4ab7d7bed301 408308 hello_2.2.orig.tar.gz
+ 22606a73695b59996ca6318208326e4e4f9d6d79 293700 hello_2.2-1.debian.tar.xz
+ 2a84710fdae94cbe881e2e9a39d8a947f19499b8 18044 hello-dbgsym_2.2-1_amd64.ddeb
+ e9c54056e870b1fbf5c9bfe68cfa6ed941cf4192 15492 hello_2.2-1_amd64.buildinfo
+ 0e69be8e790562846cb00c3748a2af51f426167d 40100 hello_2.2-1_amd64.deb
+Checksums-Sha256:
+ 2d57472ef76b28483c852c36318cd66842a98e9844dae656071a404abc588400 1527 hello_2.2-1.dsc
+ 69a2861b1fcec657c1a0ec8a87bd38fb8f0072a1dec085fdd5653daac9be5751 408308 hello_2.2.orig.tar.gz
+ b41fc73edf28a19fd44fb6a099caa9d968f93c5a2adbb875314058509a04a8db 293700 hello_2.2-1.debian.tar.xz
+ b97d13d05254f7733e810094509f85aa1d30a23a9d9834368cfe7d9d5f3a159b 18044 hello-dbgsym_2.2-1_amd64.ddeb
+ ceb93fcc9d577478a58284aebfba5e2aea4920a375b875994f3288f8bcbef8a6 15492 hello_2.2-1_amd64.buildinfo
+ 0fdfeafb38e8eb8a6037dd73967157de4bad455260f6419cc2ba3c25aa276f88 40100 hello_2.2-1_amd64.deb
+Files:
+ 8ed1b4cce292527d8de3a55e9ffa4fff 1527 unknown optional hello_2.2-1.dsc
+ d2298e4b0c0a5b6e0746e929a7d0a401 408308 unknown optional hello_2.2.orig.tar.gz
+ 12095bfd6930560092f7f2dbc0e4d98a 293700 unknown optional hello_2.2-1.debian.tar.xz
+ be6215cffbd791546e1226f34fc61821 18044 debug optional hello-dbgsym_2.2-1_amd64.ddeb
+ cef7ab7f225b0d27ede1f191f88a564e 15492 unknown optional hello_2.2-1_amd64.buildinfo
+ 77d023c3f1725cf612a1dfad6d341e9d 40100 unknown optional hello_2.2-1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEdXkPneQ5neaLAmy2ID+ebastqDgFAmSMFiwACgkQID+ebast
+qDiV6gwAmrxpnXZ0h1rHsnHjua6WEsoWs1UDggsmZ6kZX0r8tAPgcWaXKOUjBjou
+UMt/oBZjWby2HPBZk2Yr2KFWLfDZed84iFOuxAnHScdMYydNjiknXodSePFIfown
+rlGjLDUrCy4AiIXAEShC8cTK4BEYQ/eJIDTKga3yQ7VOgvv3gSpreugEAKiPk1h7
+pObycAjIWsM/NWoZ8/f7tWiqTekA10gq02qNYHYefqlYThH5LMpClSKo3oglb1df
+Ll1GC+zdphBuGV+megA+N4gMCDk78YkeP4fgiiffvOgbBboBi4gfEGXOLrTIZDmP
+T+dzigog9snwjk+4RFV75X/GlV+H/1YG4zovT36ZiNrIIQTzhWBJqZPC2GFtSekt
+6uFc0URvFxxrE0m4KJ+iHbAp1Y7zfwqB0lnm8BBlvlnNvlhjJQddr0PsB7ao3Zk0
+sLyRNCGyXJntxojtRF0c/O0xwVPtirhmtv1fiyJxJySZdiR+k3x7hPLO6KD2RlKq
+Tp5SS8vX
+=DHXu
+-----END PGP SIGNATURE-----
