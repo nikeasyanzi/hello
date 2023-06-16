@@ -16,29 +16,29 @@ Changes:
  .
    * 2 release (Closes: #45678)
 Checksums-Sha1:
- a7b93d91bcf8ce8906f041d63d0898c17ee02751 1515 hello_2.2-2.dsc
- cd6dbad53644195d5783d81ca121ec43530bec2f 293740 hello_2.2-2.debian.tar.xz
- d24f46b6d316481e9f36decb6c9a8d131c2707ac 15010 hello_2.2-2_source.buildinfo
+ c96998d5fc5c8069de634b2ee077b934275a8a52 1515 hello_2.2-2.dsc
+ 391e574b4f86da6c5b867ce5cbaee0b8ed2ccb97 293488 hello_2.2-2.debian.tar.xz
+ 6c1293e7baec4f3f52f44a7a5a952f9686c524ca 15010 hello_2.2-2_source.buildinfo
 Checksums-Sha256:
- e9373541150bb01ca08a1f17886e4c290b1d544e0c726e99ef746b3800934b40 1515 hello_2.2-2.dsc
- 6912c25b2dd8f198ab19653decdd22779bbea22b746a51e5cceb84d6516582ee 293740 hello_2.2-2.debian.tar.xz
- e853edd8a530a39f65fcf435128305678222e8c1fb9a2cbd0aca9d04120e58e1 15010 hello_2.2-2_source.buildinfo
+ 1e63c7557ce0d841c0ea0a0f99e7e948508319f75fe852ea74b1d067f4c0c294 1515 hello_2.2-2.dsc
+ e0c8fb24378eb370702e2716972102f530d5d3e4aa51bc87f13b8443bf6e80ba 293488 hello_2.2-2.debian.tar.xz
+ ea6019d97da7cf5f639c9bfa596962c5c3d291ab1a8d94af0288cf117a396294 15010 hello_2.2-2_source.buildinfo
 Files:
- b1e7ff2f7c2150c601731daefbd8b064 1515 x11 optional hello_2.2-2.dsc
- f0f747505b07eae32debcb07befaed55 293740 x11 optional hello_2.2-2.debian.tar.xz
- 1d758b11b156bb849bfb526696dc34c1 15010 x11 optional hello_2.2-2_source.buildinfo
+ 53586b2997e5ad91dd5a98aa8b949276 1515 x11 optional hello_2.2-2.dsc
+ 184d7a04ff5e01239b70f4142536fb5e 293488 x11 optional hello_2.2-2.debian.tar.xz
+ d1be2a9823918c2c09f45674845f3686 15010 x11 optional hello_2.2-2_source.buildinfo
 
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEEdXkPneQ5neaLAmy2ID+ebastqDgFAmSML7kACgkQID+ebast
-qDjqFAv+OaStAvQGLblJ80Eg9IqF60U3j3ko1dIiWIQZXbUOiT9AnxLbv9UU9eMt
-7vx3VSRHhsWWV5JYXFTgWM6oeg4oUsAJd+NB/6xkWuMHMMjS1bA/wwnAzp3w06nC
-SmMf6CMm6ANv6+c7JTD3JsST/GseQ9sPoXH6ttlkDi77NyJRjGciMEc5XThLNQDR
-Mo1hhhxVA/nlZqJy4/DZsgWpBRSttPqcb+Z+JBIgzkS91MyvTjphN8uVe9L1d31z
-k9j3IIjuzzAEuK7hhvgdXQCdpPocTYN/LUWYwa86iv6upeW/HRs7teoNpdByiQlK
-y17jwJPd5DEUtm1O3irL+oxF8q9/DBZ6NC6wAull6JR8yjwCE2bBe+I2bzUcq8Uh
-/2VuVc3qUNurKAqTXu8Mb4fGd1ol5KfZ+y69Z1XwerTpNU912m6AxHvFRx8HUq8G
-LMb26jX8H9qbyAVQc4Vldkl1dXAtjZphjkcu6mYd0nSTB223AAH8EME7AMa0X9au
-emig+WCw
-=7Jn6
+iQGzBAEBCgAdFiEEdXkPneQ5neaLAmy2ID+ebastqDgFAmSMQqsACgkQID+ebast
+qDgPiwwAitFNZEwRCxrp9Is0Rs2JP8km3+djaZg2hS1LN7+YY/kkT1A0oqxfRsVj
+i45HnChLN9/E114agq5z2OEhYEJ24P8zoUB2Y+o9dHsFkoUS7xOEXAzyRNqf1JUh
+V5o0g8vOSyWvkGsYGMoFGce3JBBxmh+B1gi/ZTmE3UvkK4ZDbgyrStYkuG2M/T7x
+dMgZ/1oEbZyJFhdXwaxeJGZEqY+OOJk8q5hJyHti2hghUH1zcYlWhWNEDXDPxGow
+1twhV+pz0cmNsIGEvGwPMu7+949Go1BWKvxb1dxnFKg9wrqb63ggXakDYSfC82Xn
+Kxkoy8VrUIGhi3WJ3g/TBa+Eq7fEW6HFjUJ/9Tn5B1k+4lRpAQEcPowXaY/YweuO
+Z+UlOjzu5YJhx8U+6Bw2Z2X3U1E2wIFVt9ParF40x/R3zPICWhHSitFzHlU1vBC1
+t7w7WXuH3ND0yt9uJ4mmFNKJ6EczKITZfV9ZUfr+kD8awCj088CZId6NDlqohM56
+u8vgmZXW
+=PiAc
 -----END PGP SIGNATURE-----
