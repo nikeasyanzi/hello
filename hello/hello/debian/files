@@ -1,3 +1,1 @@
-hello-dbgsym_2.2-1_amd64.ddeb debug optional automatic=yes
-hello_2.2-1_amd64.buildinfo unknown optional
-hello_2.2-1_amd64.deb unknown optional
+hello_2.2-2_source.buildinfo x11 optional

@@ -5,16 +5,16 @@ Format: 1.0
 Source: hello
 Binary: hello
 Architecture: source
-Version: 2.2-1
+Version: 2.2-2
 Checksums-Md5:
- d677bf41de87ade99d3b38a8947a9f75 1515 hello_2.2-1.dsc
+ b1e7ff2f7c2150c601731daefbd8b064 1515 hello_2.2-2.dsc
 Checksums-Sha1:
- 29919350e7ccf897a5db01ea5d5975b01e3bc867 1515 hello_2.2-1.dsc
+ a7b93d91bcf8ce8906f041d63d0898c17ee02751 1515 hello_2.2-2.dsc
 Checksums-Sha256:
- 6deee8b1d22edae2890fc1a9138726dc19a18e6f9b19773e970db127b59f4b48 1515 hello_2.2-1.dsc
+ e9373541150bb01ca08a1f17886e4c290b1d544e0c726e99ef746b3800934b40 1515 hello_2.2-2.dsc
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Fri, 16 Jun 2023 17:32:01 +0800
+Build-Date: Fri, 16 Jun 2023 17:47:33 +0800
 Build-Tainted-By:
  merged-usr-via-symlinks
  usr-local-has-programs
@@ -422,15 +422,15 @@ Environment:
 
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEEdXkPneQ5neaLAmy2ID+ebastqDgFAmSMLBEACgkQID+ebast
-qDiCjwwA1dvO7pgrpp580P45i1znjlW8G6zv3J3XTB8yUBCt1MAaDjVWVgalfEzE
-qkO3MxLkCVVuo3o9tKDN+9zU6e1jSot3BdAvK5iZiruUhW71LuAVpcZXzIv+uYeT
-JJP+ixyRPwhpd84gkKlT0PiTUngHFkK3FYswDBenj4IFkXPYkhhM3cyHMpB3Az1o
-fh9QXQjl7vOl0uVl0wpYNJsZow2Q6HPn+6/heKvsHjuFjN5EkIyk/nXssGf69Qr/
-l00x0LAuPONbuA8yAZKFDAhPmroTVq78n9imJyWGCNzhCXSEhDVRvGMNnNvtNP1z
-rrCBHDTbmaqHQLBQN2qFWK4mYUeNbe2HbB9jkM1AJmczKmk0vEx1eOwmL3MZQ5b1
-z5htOXMs/TZbrWOnWH1rUMIFmwR1O3UIultOtppg7KoHD1ZL71EEx11X0uft/SB3
-i5fMTjnug+oHI6j2xBPD+dYmSZbEqLSykDFeNN1ZLI7Lc9BQt/h+zGE7IKKBbl+P
-vlTQLtRC
-=pNMt
+iQGzBAEBCgAdFiEEdXkPneQ5neaLAmy2ID+ebastqDgFAmSML7gACgkQID+ebast
+qDiXTgwAlHZBR43x4KOqDncSzwmyNJ8JPeR1dRiRC63c7aDRJCLswGpeFu8kUHw+
+jqez317GIYRE6nWKD49s2fWpk/m5AZo7I8pQhbfAdlFUsnyCdBU50zAzmcZqS/SS
+KkkAGxG5bU+E6qKJjkfxlOPXGN2sfrSQOPLC+k9/T1aaoGx18igX0uolELtNCQts
+/JbVnXKRVRkcYQ5GgMDEOFOcp2zTEN1/942QbIiTI0c31aPUFOJ0cBUmvDvjNT+N
+TkstAjms656LmzM7rjccEdEObcRDs5fXznVszCbHhdSY01G/8zX/Kj8HD4mDvhi9
+VfZ04T8pQtxXQ8RRhXz2pqJyVaocKSh2XHbBqrFVXCcfF2HDB7izZgmUoMjEfZ57
+mmaFdDXTKI3BKCLNDnaTEnK/TvSlkp286FLRc+Xu/4H0AL2O37uPJAao1MYfR2/S
+m9OjH7m2FqIpP7rH/1DouotmzncEwc+zQ9Ekm8XFC+Houuoy1bJoI1LodtF8WdTX
+gUqGvmRd
+=Nd9U
 -----END PGP SIGNATURE-----

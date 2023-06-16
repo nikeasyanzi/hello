@@ -1,4 +1,4 @@
- dpkg-buildpackage -rfakeroot -us -uc -ui
+ dpkg-buildpackage -us -uc -ui
 dpkg-buildpackage: info: source package hello
 dpkg-buildpackage: info: source version 2.2-1
 dpkg-buildpackage: info: source distribution unstable
@@ -7,6 +7,94 @@ dpkg-buildpackage: info: source changed by Craig Yang <nikeasyanzi@gmail.com>
 dpkg-buildpackage: info: host architecture amd64
  fakeroot debian/rules clean
 dh clean
+   dh_auto_clean
+	make -j8 distclean
+make[1]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello'
+Making distclean in contrib
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/contrib'
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/contrib'
+Making distclean in gnulib/lib
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/gnulib/lib'
+test -z "" || rm -f 
+test -z "libgnu.a" || rm -f libgnu.a
+rm -f *.o
+test -z "core *.stackdump getopt.h getopt.h-t stdbool.h stdbool.h-t unistd.h" || rm -f core *.stackdump getopt.h getopt.h-t stdbool.h stdbool.h-t unistd.h
+rm -f *.tab.c
+test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+test . = "." || test -z "" || rm -f 
+test -z "" || rm -f 
+rm -f ./.deps/__fpending.Po
+rm -f ./.deps/close-stream.Po
+rm -f ./.deps/closeout.Po
+rm -f ./.deps/error.Po
+rm -f ./.deps/exitfail.Po
+rm -f ./.deps/getopt.Po
+rm -f ./.deps/getopt1.Po
+rm -f ./.deps/quotearg.Po
+rm -f ./.deps/xalloc-die.Po
+rm -f ./.deps/xmalloc.Po
+rm -f Makefile
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/gnulib/lib'
+Making distclean in po
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/po'
+rm -f *.insert-header
+rm -f remove-potcdate.sed
+rm -f stamp-poT
+rm -f core core.* hello.po hello.1po hello.2po *.new.po
+rm -fr *.o
+rm -f Makefile Makefile.in POTFILES *.mo
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/po'
+Making distclean in src
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/src'
+test -z "hello" || rm -f hello
+rm -f *.o
+rm -f *.tab.c
+test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+test . = "." || test -z "" || rm -f 
+rm -f ./.deps/hello.Po
+rm -f Makefile
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/src'
+Making distclean in doc
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/doc'
+test -z "hello.dvi hello.pdf hello.ps hello.html" \
+|| rm -rf hello.dvi hello.pdf hello.ps hello.html
+rm -rf hello.t2d hello.t2p
+rm -f vti.tmp* ./version.texi.tmp*
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/doc'
+Making distclean in man
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/man'
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/man'
+Making distclean in tests
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/tests'
+test -z "greeting-1.log greeting-2.log hello-1.log traditional-1.log" || rm -f greeting-1.log greeting-2.log hello-1.log traditional-1.log
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+test -z "greeting-1.trs greeting-2.trs hello-1.trs traditional-1.trs" || rm -f greeting-1.trs greeting-2.trs hello-1.trs traditional-1.trs
+test -z "test-suite.log" || rm -f test-suite.log
+rm -f Makefile
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/tests'
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello'
+test -z "" || rm -f 
+rm -f config.h stamp-h1
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+test . = "." || test -z "" || rm -f 
+rm -f cscope.out cscope.in.out cscope.po.out cscope.files
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello'
+rm -f config.status config.cache config.log configure.lineno config.status.lineno
+rm -f Makefile
+make[1]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello'
+   dh_autoreconf_clean
    dh_clean
  dpkg-source -b .
 dpkg-source: info: using source format '3.0 (quilt)'
@@ -28,18 +116,48 @@ dpkg-source: warning: ignoring deletion of file doc/Makefile.in, use --include-r
 dpkg-source: warning: ignoring deletion of file doc/Makefile, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file gnulib/lib/Makefile.in, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file gnulib/lib/Makefile, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file gnulib/m4/stdint_h.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file gnulib/m4/wchar_t.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file gnulib/m4/glibc2.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file gnulib/m4/intl.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file gnulib/m4/intmax.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file gnulib/m4/longdouble.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file gnulib/m4/wint_t.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file gnulib/m4/xsize.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file gnulib/m4/intldir.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file gnulib/m4/inttypes_h.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file gnulib/m4/visibility.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file gnulib/m4/glibc21.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file gnulib/m4/inttypes-pri.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file gnulib/m4/longlong.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file gnulib/m4/ulonglong.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file gnulib/m4/intdiv0.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file gnulib/m4/size_max.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file gnulib/m4/uintmax_t.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file gnulib/m4/lcmessage.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file gnulib/m4/printf-posix.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file gnulib/m4/codeset.m4, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory autom4te.cache
+dpkg-source: warning: ignoring deletion of file autom4te.cache/requests, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file autom4te.cache/output.1, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file autom4te.cache/output.0, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file autom4te.cache/traces.1, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file autom4te.cache/traces.0, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file tests/Makefile.in, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file tests/Makefile, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file build-aux/mdate-sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file build-aux/test-driver, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file build-aux/mkinstalldirs, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file build-aux/depcomp, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file build-aux/install-sh, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file build-aux/missing, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file build-aux/texinfo.tex, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file build-aux/compile, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file src/Makefile.in, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file src/Makefile, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file po/Makefile.in, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file po/Makefile, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file po/Makevars.template, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file po/POTFILES, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file contrib/Makefile.in, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file contrib/Makefile, use --include-removal to override
@@ -179,297 +297,104 @@ config.status: creating po/Makefile
 configure: WARNING: unrecognized options: --disable-maintainer-mode
    dh_auto_build
 	make -j8
-make[1]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello'
+make[1]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello'
 make  all-recursive
-make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello'
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello'
 Making all in contrib
-make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/contrib'
+make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/contrib'
 make[3]: Nothing to be done for 'all'.
-make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/contrib'
+make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/contrib'
 Making all in gnulib/lib
-make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/gnulib/lib'
+make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/gnulib/lib'
 make  all-am
-make[4]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/gnulib/lib'
-gcc -DHAVE_CONFIG_H -I. -I../..  -I../../intl -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello/hello=. -fstack-protector-strong -Wformat -Werror=format-security -c -o xalloc-die.o xalloc-die.c
-gcc -DHAVE_CONFIG_H -I. -I../..  -I../../intl -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello/hello=. -fstack-protector-strong -Wformat -Werror=format-security -c -o close-stream.o close-stream.c
-gcc -DHAVE_CONFIG_H -I. -I../..  -I../../intl -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello/hello=. -fstack-protector-strong -Wformat -Werror=format-security -c -o closeout.o closeout.c
-gcc -DHAVE_CONFIG_H -I. -I../..  -I../../intl -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello/hello=. -fstack-protector-strong -Wformat -Werror=format-security -c -o exitfail.o exitfail.c
-gcc -DHAVE_CONFIG_H -I. -I../..  -I../../intl -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello/hello=. -fstack-protector-strong -Wformat -Werror=format-security -c -o quotearg.o quotearg.c
-gcc -DHAVE_CONFIG_H -I. -I../..  -I../../intl -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello/hello=. -fstack-protector-strong -Wformat -Werror=format-security -c -o xmalloc.o xmalloc.c
+make[4]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/gnulib/lib'
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../../intl -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello=. -fstack-protector-strong -Wformat -Werror=format-security -c -o xalloc-die.o xalloc-die.c
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../../intl -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello=. -fstack-protector-strong -Wformat -Werror=format-security -c -o close-stream.o close-stream.c
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../../intl -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello=. -fstack-protector-strong -Wformat -Werror=format-security -c -o closeout.o closeout.c
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../../intl -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello=. -fstack-protector-strong -Wformat -Werror=format-security -c -o exitfail.o exitfail.c
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../../intl -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello=. -fstack-protector-strong -Wformat -Werror=format-security -c -o quotearg.o quotearg.c
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../../intl -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello=. -fstack-protector-strong -Wformat -Werror=format-security -c -o xmalloc.o xmalloc.c
 rm -f libgnu.a
 ar cru libgnu.a xalloc-die.o close-stream.o closeout.o exitfail.o quotearg.o xmalloc.o
 ar: `u' modifier ignored since `D' is the default (see `U')
 ranlib libgnu.a
-make[4]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/gnulib/lib'
-make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/gnulib/lib'
+make[4]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/gnulib/lib'
+make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/gnulib/lib'
 Making all in po
-make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/po'
+make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/po'
 make[3]: Nothing to be done for 'all'.
-make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/po'
+make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/po'
 Making all in src
-make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/src'
-gcc -DLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H -I. -I..  -I../gnulib/lib -I../gnulib/lib -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello/hello=. -fstack-protector-strong -Wformat -Werror=format-security -c -o hello.o hello.c
-gcc  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello/hello=. -fstack-protector-strong -Wformat -Werror=format-security  -Wl,-Bsymbolic-functions -Wl,-z,relro -o hello hello.o ../gnulib/lib/libgnu.a 
-make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/src'
+make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/src'
+gcc -DLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H -I. -I..  -I../gnulib/lib -I../gnulib/lib -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello=. -fstack-protector-strong -Wformat -Werror=format-security -c -o hello.o hello.c
+gcc  -g -O2 -fdebug-prefix-map=/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello=. -fstack-protector-strong -Wformat -Werror=format-security  -Wl,-Bsymbolic-functions -Wl,-z,relro -o hello hello.o ../gnulib/lib/libgnu.a 
+make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/src'
 Making all in doc
-make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/doc'
-restore=: && backupdir=".am$$" && \
-am__cwd=`pwd` && CDPATH="${ZSH_VERSION+.}:" && cd . && \
-rm -rf $backupdir && mkdir $backupdir && \
-if (/bin/bash /home/craigyang/workplace/hpe_work/package/hello/hello/build-aux/missing makeinfo --version) >/dev/null 2>&1; then \
-  for f in hello.info hello.info-[0-9] hello.info-[0-9][0-9] hello.i[0-9] hello.i[0-9][0-9]; do \
-    if test -f $f; then mv $f $backupdir; restore=mv; else :; fi; \
-  done; \
-else :; fi && \
-cd "$am__cwd"; \
-if /bin/bash /home/craigyang/workplace/hpe_work/package/hello/hello/build-aux/missing makeinfo   -I . \
- -o hello.info hello.texi; \
-then \
-  rc=0; \
-  CDPATH="${ZSH_VERSION+.}:" && cd .; \
-else \
-  rc=$?; \
-  CDPATH="${ZSH_VERSION+.}:" && cd . && \
-  $restore $backupdir/* `echo "./hello.info" | sed 's|[^/]*$||'`; \
-fi; \
-rm -rf $backupdir; exit $rc
-make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/doc'
+make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/doc'
+make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/doc'
 Making all in man
-make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/man'
+make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/man'
 make[3]: Nothing to be done for 'all'.
-make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/man'
+make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/man'
 Making all in tests
-make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/tests'
+make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/tests'
 make[3]: Nothing to be done for 'all'.
-make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/tests'
-make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello'
-make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello'
-make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello'
-make[1]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello'
+make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/tests'
+make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello'
+make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello'
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello'
+make[1]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello'
    dh_auto_test
-   create-stamp debian/debhelper-build-stamp
- fakeroot debian/rules binary
-dh binary
-   dh_testroot
-   dh_prep
-   dh_auto_install
-	make -j8 install DESTDIR=/home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello AM_UPDATE_INFO_DIR=no
-make[1]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello'
-Making install in contrib
-make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/contrib'
-make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/contrib'
-make[3]: Nothing to be done for 'install-exec-am'.
-make[3]: Nothing to be done for 'install-data-am'.
-make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/contrib'
-make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/contrib'
-Making install in gnulib/lib
-make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/gnulib/lib'
-make  install-am
-make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/gnulib/lib'
-make[4]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/gnulib/lib'
-make[4]: Nothing to be done for 'install-exec-am'.
-make[4]: Nothing to be done for 'install-data-am'.
-make[4]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/gnulib/lib'
-make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/gnulib/lib'
-make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/gnulib/lib'
-Making install in po
-make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/po'
-/usr/bin/mkdir -p /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share
-installing bg.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/bg/LC_MESSAGES/hello.mo
-installing ca.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/ca/LC_MESSAGES/hello.mo
-installing da.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/da/LC_MESSAGES/hello.mo
-installing de.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/de/LC_MESSAGES/hello.mo
-installing de_DE.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/de_DE/LC_MESSAGES/hello.mo
-installing el.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/el/LC_MESSAGES/hello.mo
-installing eo.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/eo/LC_MESSAGES/hello.mo
-installing es.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/es/LC_MESSAGES/hello.mo
-installing es_AR.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/es_AR/LC_MESSAGES/hello.mo
-installing et.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/et/LC_MESSAGES/hello.mo
-installing eu.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/eu/LC_MESSAGES/hello.mo
-installing fa.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/fa/LC_MESSAGES/hello.mo
-installing fi.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/fi/LC_MESSAGES/hello.mo
-installing fr.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/fr/LC_MESSAGES/hello.mo
-installing ga.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/ga/LC_MESSAGES/hello.mo
-installing gl.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/gl/LC_MESSAGES/hello.mo
-installing he.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/he/LC_MESSAGES/hello.mo
-installing hr.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/hr/LC_MESSAGES/hello.mo
-installing hu.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/hu/LC_MESSAGES/hello.mo
-installing id.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/id/LC_MESSAGES/hello.mo
-installing it.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/it/LC_MESSAGES/hello.mo
-installing ja.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/ja/LC_MESSAGES/hello.mo
-installing ka.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/ka/LC_MESSAGES/hello.mo
-installing ko.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/ko/LC_MESSAGES/hello.mo
-installing lv.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/lv/LC_MESSAGES/hello.mo
-installing nb.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/nb/LC_MESSAGES/hello.mo
-installing nl.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/nl/LC_MESSAGES/hello.mo
-installing nn.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/nn/LC_MESSAGES/hello.mo
-installing pl.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/pl/LC_MESSAGES/hello.mo
-installing pt.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/pt/LC_MESSAGES/hello.mo
-installing pt_BR.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/pt_BR/LC_MESSAGES/hello.mo
-installing ro.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/ro/LC_MESSAGES/hello.mo
-installing ru.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/ru/LC_MESSAGES/hello.mo
-installing sk.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/sk/LC_MESSAGES/hello.mo
-installing sl.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/sl/LC_MESSAGES/hello.mo
-installing sr.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/sr/LC_MESSAGES/hello.mo
-installing sv.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/sv/LC_MESSAGES/hello.mo
-installing tr.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/tr/LC_MESSAGES/hello.mo
-installing uk.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/uk/LC_MESSAGES/hello.mo
-installing vi.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/vi/LC_MESSAGES/hello.mo
-installing zh_CN.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/zh_CN/LC_MESSAGES/hello.mo
-installing zh_TW.gmo as /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/locale/zh_TW/LC_MESSAGES/hello.mo
-if test "hello" = "gettext-tools"; then \
-  /usr/bin/mkdir -p /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/gettext/po; \
-  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
-    /usr/bin/install -c -m 644 ./$file \
-		    /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/gettext/po/$file; \
-  done; \
-  for file in Makevars; do \
-    rm -f /home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/gettext/po/$file; \
-  done; \
-else \
-  : ; \
-fi
-make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/po'
-Making install in src
-make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/src'
-make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/src'
-make[3]: Nothing to be done for 'install-data-am'.
- /usr/bin/mkdir -p '/home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/bin'
-  /usr/bin/install -c hello '/home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/bin'
-make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/src'
-make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/src'
-Making install in doc
-make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/doc'
-make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/doc'
-make[3]: Nothing to be done for 'install-exec-am'.
- /usr/bin/mkdir -p '/home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/info'
- /usr/bin/install -c -m 644 ./hello.info '/home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/info'
-make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/doc'
-make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/doc'
-Making install in man
-make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/man'
-make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/man'
-make[3]: Nothing to be done for 'install-exec-am'.
- /usr/bin/mkdir -p '/home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/man/man1'
- /usr/bin/install -c -m 644 hello.1 '/home/craigyang/workplace/hpe_work/package/hello/hello/debian/hello/usr/share/man/man1'
-make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/man'
-make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/man'
-Making install in tests
-make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/tests'
-make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello/tests'
-make[3]: Nothing to be done for 'install-exec-am'.
-make[3]: Nothing to be done for 'install-data-am'.
-make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/tests'
-make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello/tests'
-make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello'
-make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello'
-make[3]: Nothing to be done for 'install-exec-am'.
-make[3]: Nothing to be done for 'install-data-am'.
-make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello'
-make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello'
-make[1]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello'
-   dh_installdocs
-   dh_installchangelogs
-   dh_installman
-   dh_perl
-   dh_link
-   dh_strip_nondeterminism
-	Normalized debian/hello/usr/share/locale/fr/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/pt_BR/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/es/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/de/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/es_AR/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/fa/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/ko/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/uk/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/fi/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/sv/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/gl/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/da/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/bg/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/hu/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/et/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/pl/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/he/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/sr/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/hr/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/ka/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/tr/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/ru/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/nl/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/ro/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/el/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/ja/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/eo/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/lv/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/de_DE/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/id/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/zh_TW/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/eu/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/sl/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/nb/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/ga/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/it/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/ca/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/zh_CN/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/vi/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/pt/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/nn/LC_MESSAGES/hello.mo
-	Normalized debian/hello/usr/share/locale/sk/LC_MESSAGES/hello.mo
-   dh_compress
-   dh_fixperms
-   dh_missing
-   dh_dwz
-   dh_strip
-   dh_makeshlibs
-   debian/rules override_dh_shlibdeps
-make[1]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello/hello'
-dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info
-make[1]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello/hello'
-   dh_installdeb
-   dh_gencontrol
-   dh_md5sums
-   dh_builddeb
-dpkg-deb: building package 'hello' in '../hello_2.2-1_amd64.deb'.
-dpkg-deb: building package 'hello-dbgsym' in 'debian/.debhelper/scratch-space/build-hello/hello-dbgsym_2.2-1_amd64.deb'.
-	Renaming hello-dbgsym_2.2-1_amd64.deb to hello-dbgsym_2.2-1_amd64.ddeb
- dpkg-genbuildinfo
- dpkg-genchanges  >../hello_2.2-1_amd64.changes
-dpkg-genchanges: info: including full source code in upload
- dpkg-source --after-build .
-dpkg-buildpackage: info: full upload (original source is included)
-Now running lintian hello_2.2-1_amd64.changes ...
-E: hello changes: bad-distribution-in-changes-file unstable
-E: hello: changelog-is-dh_make-template
-E: hello: copyright-contains-dh_make-todo-boilerplate
-E: hello source: debian-rules-is-dh_make-template
-E: hello: description-starts-with-package-name
-E: hello: helper-templates-in-copyright
-E: hello source: license-problem-gfdl-invariants doc/hello.info invariant part is: with no invariant sections, with the front-cover texts being a gnu manual and with the back-cover texts as in (a) below
-E: hello source: license-problem-gfdl-invariants doc/hello.texi invariant part is: with no invariant sections, with the front-cover texts being a gnu manual, and with the back-cover texts as in (a) below
-E: hello source: readme-source-is-dh_make-template
-E: hello: section-is-dh_make-template
-W: hello source: bad-homepage <insert the upstream URL, if relevant>
-W: hello: bad-homepage <insert the upstream URL, if relevant>
-W: hello source: configure-generated-file-in-source config.log
-W: hello source: configure-generated-file-in-source config.status
-W: hello: copyright-has-url-from-dh_make-boilerplate
-W: hello source: dh-make-template-in-source debian/hello.cron.d.ex
-W: hello source: dh-make-template-in-source debian/hello.doc-base.EX
-W: hello source: dh-make-template-in-source debian/manpage.1.ex
-W: hello source: dh-make-template-in-source debian/manpage.sgml.ex
-W: hello source: dh-make-template-in-source debian/manpage.xml.ex
-W: hello source: dh-make-template-in-source debian/postinst.ex
-W: hello source: dh-make-template-in-source debian/postrm.ex
-W: hello source: dh-make-template-in-source debian/preinst.ex
-W: hello source: dh-make-template-in-source debian/prerm.ex
-W: hello source: dh-make-template-in-source debian/salsa-ci.yml.ex
-W: hello source: dh-make-template-in-source debian/watch.ex
-W: hello: new-package-should-close-itp-bug
-W: hello: readme-debian-contains-debmake-template
-W: hello source: space-in-std-shortname-in-dep5-copyright <special license> (paragraph at line 6)
-W: hello source: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
-W: hello: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
-W: hello source: useless-autoreconf-build-depends autotools-dev
-W: hello: wrong-bug-number-in-closes l3:#nnnn
-Finished running lintian.
+	make -j8 check VERBOSE=1
+make[1]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello'
+Making check in contrib
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/contrib'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/contrib'
+Making check in gnulib/lib
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/gnulib/lib'
+make  check-am
+make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/gnulib/lib'
+make[3]: Nothing to be done for 'check-am'.
+make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/gnulib/lib'
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/gnulib/lib'
+Making check in po
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/po'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/po'
+Making check in src
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/src'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/src'
+Making check in doc
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/doc'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/doc'
+Making check in man
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/man'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/man'
+Making check in tests
+make[2]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/tests'
+make  check-TESTS
+make[3]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/tests'
+make[4]: Entering directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/tests'
+/bin/bash: /bin/bash: cannot execute binary file
+/bin/bash: /bin/bash: cannot execute binary file
+/bin/bash: /bin/bash: cannot execute binary file
+make[4]: *** [Makefile:690: hello-1.log] Error 126
+make[4]: *** Waiting for unfinished jobs....
+make[4]: *** [Makefile:676: greeting-1.log] Error 126
+make[4]: *** [Makefile:683: greeting-2.log] Error 126
+/bin/bash: /bin/bash: cannot execute binary file
+make[4]: *** [Makefile:697: traditional-1.log] Error 126
+make[4]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/tests'
+make[3]: *** [Makefile:658: check-TESTS] Error 2
+make[3]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/tests'
+make[2]: *** [Makefile:752: check-am] Error 2
+make[2]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello/tests'
+make[1]: *** [Makefile:449: check-recursive] Error 1
+make[1]: Leaving directory '/home/craigyang/workplace/hpe_work/package/hello_git/hello/hello'
+dh_auto_test: error: make -j8 check VERBOSE=1 returned exit code 2
+make: *** [debian/rules:18: build] Error 25
+dpkg-buildpackage: error: debian/rules build subprocess returned exit status 2

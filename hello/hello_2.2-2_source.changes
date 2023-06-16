@@ -1,0 +1,44 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Tue, 13 Jun 2023 13:43:35 +0800
+Source: hello
+Architecture: source
+Version: 2.2-2
+Distribution: trusty
+Urgency: low
+Maintainer: Craig Yang <nikeasyanzi@gmail.com>
+Changed-By: Craig Yang <nikeasyanzi@gmail.com>
+Closes: 45678
+Changes:
+ hello (2.2-2) trusty; urgency=low
+ .
+   * 2 release (Closes: #45678)
+Checksums-Sha1:
+ a7b93d91bcf8ce8906f041d63d0898c17ee02751 1515 hello_2.2-2.dsc
+ cd6dbad53644195d5783d81ca121ec43530bec2f 293740 hello_2.2-2.debian.tar.xz
+ d24f46b6d316481e9f36decb6c9a8d131c2707ac 15010 hello_2.2-2_source.buildinfo
+Checksums-Sha256:
+ e9373541150bb01ca08a1f17886e4c290b1d544e0c726e99ef746b3800934b40 1515 hello_2.2-2.dsc
+ 6912c25b2dd8f198ab19653decdd22779bbea22b746a51e5cceb84d6516582ee 293740 hello_2.2-2.debian.tar.xz
+ e853edd8a530a39f65fcf435128305678222e8c1fb9a2cbd0aca9d04120e58e1 15010 hello_2.2-2_source.buildinfo
+Files:
+ b1e7ff2f7c2150c601731daefbd8b064 1515 x11 optional hello_2.2-2.dsc
+ f0f747505b07eae32debcb07befaed55 293740 x11 optional hello_2.2-2.debian.tar.xz
+ 1d758b11b156bb849bfb526696dc34c1 15010 x11 optional hello_2.2-2_source.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEdXkPneQ5neaLAmy2ID+ebastqDgFAmSML7kACgkQID+ebast
+qDjqFAv+OaStAvQGLblJ80Eg9IqF60U3j3ko1dIiWIQZXbUOiT9AnxLbv9UU9eMt
+7vx3VSRHhsWWV5JYXFTgWM6oeg4oUsAJd+NB/6xkWuMHMMjS1bA/wwnAzp3w06nC
+SmMf6CMm6ANv6+c7JTD3JsST/GseQ9sPoXH6ttlkDi77NyJRjGciMEc5XThLNQDR
+Mo1hhhxVA/nlZqJy4/DZsgWpBRSttPqcb+Z+JBIgzkS91MyvTjphN8uVe9L1d31z
+k9j3IIjuzzAEuK7hhvgdXQCdpPocTYN/LUWYwa86iv6upeW/HRs7teoNpdByiQlK
+y17jwJPd5DEUtm1O3irL+oxF8q9/DBZ6NC6wAull6JR8yjwCE2bBe+I2bzUcq8Uh
+/2VuVc3qUNurKAqTXu8Mb4fGd1ol5KfZ+y69Z1XwerTpNU912m6AxHvFRx8HUq8G
+LMb26jX8H9qbyAVQc4Vldkl1dXAtjZphjkcu6mYd0nSTB223AAH8EME7AMa0X9au
+emig+WCw
+=7Jn6
+-----END PGP SIGNATURE-----
