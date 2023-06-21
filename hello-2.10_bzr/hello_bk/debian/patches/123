@@ -1,0 +1,118 @@
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ hello (2.10-0ubuntu1) trusty; urgency=low
+ .
+   * Initial release (Closes: #1233)
+Author: Craig Yang <nikeasyanzi@gmail.com>
+Bug-Debian: https://bugs.debian.org/1233
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: 2023-06-20
+
+--- hello-2.10.orig/doc/hello.info
++++ hello-2.10/doc/hello.info
+@@ -1,7 +1,7 @@
+-This is hello.info, produced by makeinfo version 5.2 from hello.texi.
++This is hello.info, produced by makeinfo version 6.7 from hello.texi.
+ 
+-This manual is for GNU Hello (version 2.10, 19 July 2014), which prints
+-a friendly greeting (and serves as an example GNU package).
++This manual is for GNU Hello (version , 20 June 2023), which prints a
++friendly greeting (and serves as an example GNU package).
+ 
+    Copyright (C) 1992, 1993, 1996, 2002, 2005-2014 Free Software
+ Foundation, Inc.
+@@ -23,8 +23,8 @@ File: hello.info,  Node: Top,  Next: Ove
+ GNU Hello
+ *********
+ 
+-This manual is for GNU Hello (version 2.10, 19 July 2014), which prints
+-a friendly greeting (and serves as an example GNU package).
++This manual is for GNU Hello (version , 20 June 2023), which prints a
++friendly greeting (and serves as an example GNU package).
+ 
+ * Menu:
+ 
+@@ -725,17 +725,17 @@ Concept index
+ * joke, not:                             Overview.             (line 12)
+ * King, The:                             Overview.             (line 71)
+ * MacKenzie, David:                      Overview.             (line 71)
+-* 'Makefile.am' targets:                 Overview.             (line 55)
++* Makefile.am targets:                   Overview.             (line 55)
+ * McGrath, Roland:                       Overview.             (line 71)
+ * modern:                                Invoking hello.       (line 31)
+ * options:                               Invoking hello.       (line  6)
+ * overview:                              Overview.             (line  6)
+ * patches, contributing:                 Reporting bugs.       (line 25)
+ * problems:                              Reporting bugs.       (line  6)
+-* 'README-dev' source file:              Overview.             (line 29)
++* README-dev source file:                Overview.             (line 29)
+ * reporting bugs:                        Reporting bugs.       (line  6)
+ * sample output:                         Sample output.        (line  6)
+-* 'srclist-update' script:               Overview.             (line 29)
++* srclist-update script:                 Overview.             (line 29)
+ * standards, GNU coding:                 Overview.             (line 17)
+ * standards, GNU maintainer:             Overview.             (line 17)
+ * Texinfo:                               Overview.             (line 47)
+@@ -745,12 +745,17 @@ Concept index
+ 
+ 
+ Tag Table:
+-Node: Top811
+-Node: Overview1344
+-Node: Sample output4520
+-Node: Invoking hello4908
+-Node: Reporting bugs6092
+-Node: GNU Free Documentation License7355
+-Node: Concept index32510
++Node: Top807
++Node: Overview1336
++Node: Sample output4512
++Node: Invoking hello4900
++Node: Reporting bugs6084
++Node: GNU Free Documentation License7347
++Node: Concept index32502
+ 
+ End Tag Table
++
++
++Local Variables:
++coding: utf-8
++End:
+--- hello-2.10.orig/doc/stamp-vti
++++ hello-2.10/doc/stamp-vti
+@@ -1,4 +1,4 @@
+-@set UPDATED 19 July 2014
+-@set UPDATED-MONTH July 2014
+-@set EDITION 2.10
+-@set VERSION 2.10
++@set UPDATED 20 June 2023
++@set UPDATED-MONTH June 2023
++@set EDITION 
++@set VERSION 
+--- hello-2.10.orig/doc/version.texi
++++ hello-2.10/doc/version.texi
+@@ -1,4 +1,4 @@
+-@set UPDATED 19 July 2014
+-@set UPDATED-MONTH July 2014
+-@set EDITION 2.10
+-@set VERSION 2.10
++@set UPDATED 20 June 2023
++@set UPDATED-MONTH June 2023
++@set EDITION 
++@set VERSION 

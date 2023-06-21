@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Tue, 20 Jun 2023 16:07:40 +0800
+Source: hello
+Architecture: source
+Version: 2.10-3ubuntu1
+Distribution: kinetic
+Urgency: low
+Maintainer: Craig Yang <nikeasyanzi@gmail.com>
+Changed-By: Craig Yang <nikeasyanzi@gmail.com>
+Closes: 1233
+Changes:
+ hello (2.10-3ubuntu1) kinetic; urgency=low
+ .
+   * Update with Kinetic (Closes: #1233)
+Checksums-Sha1:
+ c6dfc3e819adb1a7852e1bff5599afa581928e6e 1534 hello_2.10-3ubuntu1.dsc
+ f7bebf6f9c62a2295e889f66e05ce9bfaed9ace3 725946 hello_2.10.orig.tar.gz
+ d9be124be3f2dff7d1b83fecd57acacfe9cb1108 1231 hello_2.10-3ubuntu1.diff.gz
+ 94c438de3e2bec7892db5b89a8171f52cf5c1411 15066 hello_2.10-3ubuntu1_source.buildinfo
+Checksums-Sha256:
+ 204c2e55517643d9782f3bd2cc7a6d72a1b49ed48eab5c3c91c28e7e2d93c972 1534 hello_2.10-3ubuntu1.dsc
+ 31e066137a962676e89f69d1b65382de95a7ef7d914b8cb956f41ea72e0f516b 725946 hello_2.10.orig.tar.gz
+ f34624a8e7915169d2b306023bea21977b22d375afd2e44023c0f5261388718c 1231 hello_2.10-3ubuntu1.diff.gz
+ 59310065776111861a9d7b3dbcea696a41177a1de29ae81c42e9c7bd973502b8 15066 hello_2.10-3ubuntu1_source.buildinfo
+Files:
+ 1c0a9cb92eb8140cf15105d0ec08c567 1534 utils optional hello_2.10-3ubuntu1.dsc
+ 6cd0ffea3884a4e79330338dcc2987d6 725946 utils optional hello_2.10.orig.tar.gz
+ c5c279971c818febced2d27650ac84f1 1231 utils optional hello_2.10-3ubuntu1.diff.gz
+ a5378b1608fa3da58209f5fbd2111993 15066 utils optional hello_2.10-3ubuntu1_source.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQHKBAEBCgA0FiEEdXkPneQ5neaLAmy2ID+ebastqDgFAmSSmSQWHG5pa2Vhc3lh
+bnppQGdtYWlsLmNvbQAKCRAgP55tqy2oOFm+DADXKpRMZuMTsonrmQW1GdL4QGGl
+X17zMcZ+YVMTAXYmJndlHJSflCfbSbPxIZnHu0rXb6ckA1gNAecpjpCSelML8sMR
+kzBUBHgwyCinARP/sC2cUxOr9r9gwE+pNYNJn8xlpk7VQVJOyR4+nTv4lM/P0OIc
+AUXMUgOEaADVAakgEt9Y4FlbQ2PyI1bX7qyrUQqfRurEW4u7NvHZYkUaRKUYw5OT
+IW3Aj6Vxt2Xa/7M9dUw82bpzItvU2PB7dvRU18MCcsJ5q1wOgsbkeNJHnbSdwegi
+rvzJTbHMau/mZGGHxN51f/Yjr9iOnFchXT1vPo1HyijJYuighUaYDd6h7sNzsx5X
++nuom+P6VCZeZdpx5dDX50sGE68xUuAHso5irsCc1lCmyZCbhufDhP4Vy8P+dxP4
+XEEECVR48lPInkvZmLLAwYc6X4GN8HRlpsn4nE5Ozs7Wl7n6uLGBeJr/DE7QWMjZ
+EkMX6QPjp0yqaxjK5kDmwlrBkdIft0L/nLv60wc=
+=zLXs
+-----END PGP SIGNATURE-----

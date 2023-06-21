@@ -1,0 +1,5 @@
+hello (2.10-3ubuntu1) kinetic; urgency=low
+
+  * Update with Kinetic (Closes: #1233)
+
+ -- Craig Yang <nikeasyanzi@gmail.com>  Tue, 20 Jun 2023 16:07:40 +0800

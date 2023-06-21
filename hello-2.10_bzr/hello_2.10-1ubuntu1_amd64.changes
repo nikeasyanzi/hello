@@ -1,0 +1,29 @@
+Format: 1.8
+Date: Tue, 20 Jun 2023 16:07:40 +0800
+Source: hello
+Binary: hello
+Architecture: amd64
+Version: 2.10-1ubuntu1
+Distribution: trusty
+Urgency: low
+Maintainer: Craig Yang <nikeasyanzi@gmail.com>
+Changed-By: Craig Yang <nikeasyanzi@gmail.com>
+Description:
+ hello      - This is a testing
+Closes: 1233
+Changes:
+ hello (2.10-1ubuntu1) trusty; urgency=low
+ .
+   * Initial release (Closes: #1233)
+Checksums-Sha1:
+ d72077bd2718b1b357c878c40400f71cd534fb4c 35332 hello-dbgsym_2.10-1ubuntu1_amd64.ddeb
+ 9e657309187f817a42530b8ed4d027c63adea434 14619 hello_2.10-1ubuntu1_amd64.buildinfo
+ 08a793f7b59fd53627c144c6c2cfbf481c650963 44796 hello_2.10-1ubuntu1_amd64.deb
+Checksums-Sha256:
+ a7d39401c651f94e09446c307eab7a641652fc5c29b975fa7377adf6524fbaa4 35332 hello-dbgsym_2.10-1ubuntu1_amd64.ddeb
+ b2c3fc66edd151f7a43065ecfec73e66cb83a288f339c33ec33656980d2839ec 14619 hello_2.10-1ubuntu1_amd64.buildinfo
+ 4a3733afa1acec9a9443cab78a7cd368beaf73970586f469dac4a9c9f5e16bcd 44796 hello_2.10-1ubuntu1_amd64.deb
+Files:
+ 76eb46d8316fd4463fbde0ea58778b65 35332 debug optional hello-dbgsym_2.10-1ubuntu1_amd64.ddeb
+ 426573a699748b2d99117cc5d26a3e63 14619 utils optional hello_2.10-1ubuntu1_amd64.buildinfo
+ a1b2a6bb4b856b6933844a776bd93ecf 44796 utils optional hello_2.10-1ubuntu1_amd64.deb

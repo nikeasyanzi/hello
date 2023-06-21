@@ -1,0 +1,15 @@
+Source: hello
+Section: utils
+Priority: optional
+Maintainer: Craig Yang <nikeasyanzi@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 4.4.1
+Homepage: http://www.gnu.org/software/hello/
+#Vcs-Browser: https://salsa.debian.org/debian/hello
+#Vcs-Git: https://salsa.debian.org/debian/hello.git
+
+Package: hello
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: This is a testing 
+ A funny testing package

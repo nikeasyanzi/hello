@@ -1,0 +1,29 @@
+Format: 1.8
+Date: Tue, 20 Jun 2023 16:07:40 +0800
+Source: hello
+Binary: hello
+Architecture: amd64
+Version: 2.10-2ubuntu1
+Distribution: trusty
+Urgency: low
+Maintainer: Craig Yang <nikeasyanzi@gmail.com>
+Changed-By: Craig Yang <nikeasyanzi@gmail.com>
+Description:
+ hello      - This is a testing
+Closes: 1233
+Changes:
+ hello (2.10-2ubuntu1) trusty; urgency=low
+ .
+   * Initial release (Closes: #1233)
+Checksums-Sha1:
+ 5153395c4dea862478fefcfbd41cbb184ad6de52 35332 hello-dbgsym_2.10-2ubuntu1_amd64.ddeb
+ 636a786d1cb1ed14f8798be9d52d03a299773858 14619 hello_2.10-2ubuntu1_amd64.buildinfo
+ 7148a05869f0b8d41eedc21ff7b2bbd22bfec19b 44800 hello_2.10-2ubuntu1_amd64.deb
+Checksums-Sha256:
+ 3e862e5230c198641ecd53279f935680392eb1165ef73ba7562d92a3d86bb161 35332 hello-dbgsym_2.10-2ubuntu1_amd64.ddeb
+ 96ebf79eeafdebf25692e3f72b82c6918a0f4c24da98d218bc41fc31da487bb0 14619 hello_2.10-2ubuntu1_amd64.buildinfo
+ 59f1f242d05af4b1578c39796d90e7f2616cdd5441ba71fc67c91837c0dfa5eb 44800 hello_2.10-2ubuntu1_amd64.deb
+Files:
+ ba2d1b7b4f5b299d127b6b7e7b8491c7 35332 debug optional hello-dbgsym_2.10-2ubuntu1_amd64.ddeb
+ 12ae939f4c9c6deb8e86dd371d70ca53 14619 utils optional hello_2.10-2ubuntu1_amd64.buildinfo
+ 575538893b894d87bde6437f98406743 44800 utils optional hello_2.10-2ubuntu1_amd64.deb

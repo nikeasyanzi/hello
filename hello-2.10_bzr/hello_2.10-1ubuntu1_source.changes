@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Tue, 20 Jun 2023 16:07:40 +0800
+Source: hello
+Architecture: source
+Version: 2.10-1ubuntu1
+Distribution: trusty
+Urgency: low
+Maintainer: Craig Yang <nikeasyanzi@gmail.com>
+Changed-By: Craig Yang <nikeasyanzi@gmail.com>
+Closes: 1233
+Changes:
+ hello (2.10-1ubuntu1) trusty; urgency=low
+ .
+   * Initial release (Closes: #1233)
+Checksums-Sha1:
+ 5ccf0b7379532b44f7e8e9ac74d02a42a7b774d5 1534 hello_2.10-1ubuntu1.dsc
+ f7bebf6f9c62a2295e889f66e05ce9bfaed9ace3 725946 hello_2.10.orig.tar.gz
+ 2fb428cd92dd29a38d83f52faa9325b9e160ade6 1226 hello_2.10-1ubuntu1.diff.gz
+ 982a1c8c2e38d1546c846c740712388e651f665b 15066 hello_2.10-1ubuntu1_source.buildinfo
+Checksums-Sha256:
+ 5f0934f21672a41ad94e3c65c36cbff34cfcde94b7d51c4b29d1d4e39330cac8 1534 hello_2.10-1ubuntu1.dsc
+ 31e066137a962676e89f69d1b65382de95a7ef7d914b8cb956f41ea72e0f516b 725946 hello_2.10.orig.tar.gz
+ ac01fa97b09c4e336ed0830ac288abfddd7753357dc63496e92d154c4af2b70d 1226 hello_2.10-1ubuntu1.diff.gz
+ ed147dfdecf28e0ea672311f924566db14d41613325e1b31e8be6da1db06fced 15066 hello_2.10-1ubuntu1_source.buildinfo
+Files:
+ 17a8aed0722f0423233eeb0c443b4cac 1534 utils optional hello_2.10-1ubuntu1.dsc
+ 6cd0ffea3884a4e79330338dcc2987d6 725946 utils optional hello_2.10.orig.tar.gz
+ 0c6f1a01ffeba7c8dcceaeb86ed57544 1226 utils optional hello_2.10-1ubuntu1.diff.gz
+ 74fe63de01ddd53c8d4d9bf459952656 15066 utils optional hello_2.10-1ubuntu1_source.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQHKBAEBCgA0FiEEdXkPneQ5neaLAmy2ID+ebastqDgFAmSShm8WHG5pa2Vhc3lh
+bnppQGdtYWlsLmNvbQAKCRAgP55tqy2oOCZHDADLxLnyZ+DABbTTVhuwefxuQ3+F
+tpUUr/6gMhGHA8i//9mnwmRtDWPWbfEYQkOxjw3thBhbjpls4etxuriGP5iwJcP0
+rof8fBapNTNsYiCnHKwL7ynGUk0DrfpH0CMu+62ncV/gQsR6g4cnuNJRxTWmvDnh
+IvtwecfMsDFi7rV7qzgArQMKPr8+/tgWcY8uV0d6D1TirHcShwgI9y6Y+QA9eCCe
+cA3cHFXpDbDAoClCAM2pSEjahVL1mkfjXuPXStALaHquPvWNmmllkYvbq1hLxvtQ
+X7u2qFxTA0LC8TedB/kdifLN2RjLytl07BNfzVc4vY8TPFn0qf+jf3+M9H0WHagw
+utNIMBiz7fiPPLBKTkYODOBmvjIIPbU0EVTbHQzgloJiFBUcccbvGXFr0OcGap3E
+A7Lz2MoOCJNBHW1BZY9TfQwObDZH+D+fCQM5YCYW4Mua/9R6OYIJ0kxxD6pRkJI7
+Tg6yDKI8ar1vzKs3vjEHwbPsvq2qkXRqpWQeyYc=
+=fy2H
+-----END PGP SIGNATURE-----

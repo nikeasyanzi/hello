@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Tue, 20 Jun 2023 16:07:40 +0800
+Source: hello
+Architecture: source
+Version: 2.10-2ubuntu1
+Distribution: trusty
+Urgency: low
+Maintainer: Craig Yang <nikeasyanzi@gmail.com>
+Changed-By: Craig Yang <nikeasyanzi@gmail.com>
+Closes: 1233
+Changes:
+ hello (2.10-2ubuntu1) trusty; urgency=low
+ .
+   * Initial release (Closes: #1233)
+Checksums-Sha1:
+ f8a746c799783bcea4c4b23d15d8b6b3347ad10f 1534 hello_2.10-2ubuntu1.dsc
+ f7bebf6f9c62a2295e889f66e05ce9bfaed9ace3 725946 hello_2.10.orig.tar.gz
+ d66bff6e9fdf6393288f85e65213a30e6b3c73e9 1226 hello_2.10-2ubuntu1.diff.gz
+ bc4a65fa7c4eb0fe730eeaf57f6b09d54b69fe34 15066 hello_2.10-2ubuntu1_source.buildinfo
+Checksums-Sha256:
+ 2d47727aee4b436ed047c62921c85d03cacd107fa196ba1a05c9ebe324970240 1534 hello_2.10-2ubuntu1.dsc
+ 31e066137a962676e89f69d1b65382de95a7ef7d914b8cb956f41ea72e0f516b 725946 hello_2.10.orig.tar.gz
+ db48778f79c862ea0eb99d09f864bfd50b20a6d915a59a19689f56b536b3f2ba 1226 hello_2.10-2ubuntu1.diff.gz
+ 996eb7a0a1406dd9ac2cf93610780dcedfa8f94ce9a2a16386f5c5eadbc80697 15066 hello_2.10-2ubuntu1_source.buildinfo
+Files:
+ 10b99ae7c214229961ca4ae81852e14c 1534 utils optional hello_2.10-2ubuntu1.dsc
+ 6cd0ffea3884a4e79330338dcc2987d6 725946 utils optional hello_2.10.orig.tar.gz
+ b37fcef9a5e88396e172a1ed277b34ee 1226 utils optional hello_2.10-2ubuntu1.diff.gz
+ 5d7244595ce5c523fd2c9c6c7256d306 15066 utils optional hello_2.10-2ubuntu1_source.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQHKBAEBCgA0FiEEdXkPneQ5neaLAmy2ID+ebastqDgFAmSSh8oWHG5pa2Vhc3lh
+bnppQGdtYWlsLmNvbQAKCRAgP55tqy2oOM8BC/0dwiPZVM4FGsg+sidhUbu1L9fP
+7u8ciG9kwKyHGTT4vHBXyZvZqyj8MMEdQ0PSn0FViN6gOFBEJndngQwhTwqds5vE
+RHHkGDYpk/o6MKeOxLXrdQsaZuVqHWMt8ujTXKyM4NpjjdZjQGL+uX7rJr+cRK9X
+R6HkFa7Yylo9aWsPLHfPbq3goTtoH1ccHlYCrXaa6gOo9GEdci28/1AN8DJDHXob
+bTFc+bwJipDoCFYjcoAYoFG6/1irrw7DgGSyMVejo/bAZ6xqcVMFehlcKavBa4Kc
+hdkz+ga79CR5DxdOtHPIw0LubjDKDsMyLZntpcCwKayu3ylKzGPphvRB1du/KXhw
+meBp6Ti9XebgmAzRxUdfAF2H6OgVsPE3KEFvBulGmFT1qvlaC41apWzv2NIlpsQ/
+cHY8YbqyWC3ArbNa0/t5dz4NtE3Emf3mD5NARaRwni0Gfhjsfal/UEIATm59t/pq
+RRDTtafgfDQbLMnVCB+bHMJ6/C+QlMlnVd+pqzc=
+=hjvz
+-----END PGP SIGNATURE-----

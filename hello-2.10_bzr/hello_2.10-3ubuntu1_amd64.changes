@@ -1,0 +1,29 @@
+Format: 1.8
+Date: Tue, 20 Jun 2023 16:07:40 +0800
+Source: hello
+Binary: hello
+Architecture: amd64
+Version: 2.10-3ubuntu1
+Distribution: kinetic
+Urgency: low
+Maintainer: Craig Yang <nikeasyanzi@gmail.com>
+Changed-By: Craig Yang <nikeasyanzi@gmail.com>
+Description:
+ hello      - This is a testing
+Closes: 1233
+Changes:
+ hello (2.10-3ubuntu1) kinetic; urgency=low
+ .
+   * Update with Kinetic (Closes: #1233)
+Checksums-Sha1:
+ 357ea258442c908f71be424cfc237a830fa6190a 35332 hello-dbgsym_2.10-3ubuntu1_amd64.ddeb
+ 1abdddabbc88b689355cea04af80e1ecf6f325c6 14619 hello_2.10-3ubuntu1_amd64.buildinfo
+ f553e71895b50be75b77eee626b6c9410d8d71ef 44800 hello_2.10-3ubuntu1_amd64.deb
+Checksums-Sha256:
+ b7fc6f64ecc07f10aec0ff783c80000710811c7c12a28cdcb6616ac2d5e19e03 35332 hello-dbgsym_2.10-3ubuntu1_amd64.ddeb
+ 6eadc5d8aca92f00b866f353e8f409cb80d0bdafbb10ad377ae5c03197b3ac76 14619 hello_2.10-3ubuntu1_amd64.buildinfo
+ c17884f1cfb7950c68352854f470ca408819ee07c60503909883b9662e789eb8 44800 hello_2.10-3ubuntu1_amd64.deb
+Files:
+ 0e631a1b2342caf3cc49f056b76e152e 35332 debug optional hello-dbgsym_2.10-3ubuntu1_amd64.ddeb
+ 9dfb3ceee3158bd4faf0b93b61740fec 14619 utils optional hello_2.10-3ubuntu1_amd64.buildinfo
+ 9b67f655819b3925890f205051d2d74e 44800 utils optional hello_2.10-3ubuntu1_amd64.deb
